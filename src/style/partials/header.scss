@@ -1,0 +1,75 @@
+.fluid-paddings {
+	padding: 70px;
+	@media (max-width: 767px) {
+		padding: 35px 35px 70px 35px;
+		}
+	@media (max-width: 479px) {
+		padding: 15px 15px 30px 15px;
+	}
+}
+.header {
+	h4 {
+		color: #ffffff;
+		margin: 0;
+		padding-bottom: 20px;
+		// text-align: center;
+	}
+	ul {
+		list-style: none;
+		padding: 0;
+	}
+	p, li {
+		color: #808080;
+	}
+	.autors-margin {
+		margin-bottom: 70px;
+		@media (max-width: 767px) {
+			margin-bottom: 30px;
+			text-align: center;
+		}
+		.fampad {
+			@media (max-width: 767px) {
+				padding: 0;
+			}
+			&.text-align {
+				text-align: right;
+				@media (max-width: 767px) {
+					text-align: center;
+				}
+				@media (max-width: 479px) {
+					text-align: center;
+				}
+			}
+			img {
+				width: 200px;
+				height: 143px;
+			}
+			.fampad-text {
+				float: left;
+				padding-top: 18.5px;
+				padding-left: 18.5px;
+				@media (max-width: 767px) {
+					float: none;
+					text-align: center;
+					padding-left: 0;
+				}
+				h1 {
+					color: white;
+					margin-bottom: 20px;
+				}
+			}
+			.img-log {
+				float: left;
+				@media (max-width: 767px) {
+					float: none;
+					text-align: center;
+				}
+			}
+		}
+	}
+	.bottom-paddings {
+		padding-bottom: 2em;
+	}
+}
+
+

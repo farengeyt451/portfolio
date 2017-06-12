@@ -1,0 +1,95 @@
+$btn-df-color                       : #ffffff;
+$btn-df-bg-color                    : #1C1C1C;
+$btn-df-border-color                : #ffffff;
+
+$btn-df-hover-color                 : #808080;
+$btn-df-hover-bg-color              : #1C1C1C;
+$btn-df-hover-border-color          : #3A3A3A;
+
+$btn-df-focus-color                 : #ffffff;
+$btn-df-focus-bg-color              : #1C1C1C;
+$btn-df-focus-border-color          : #ffffff;
+
+$btn-df-active-color                : #ffffff;
+$btn-df-active-bg-color             : #1C1C1C;
+$btn-df-active-border-color         : #ffffff;
+
+$btn-df-active-hover-color          : #808080;
+$btn-df-active-hover-bg-color       : #1C1C1C;
+$btn-df-active-hover-border-color   : #3A3A3A;
+
+$btn-df-disabled-color              : #808080;
+$btn-df-disabled-bg-color           : #1C1C1C;
+$btn-df-disabled-border-color       : #3A3A3A;
+
+$btn-df-badge-color                 : #ffffff;
+$btn-df-badge-bg-color              : #1C1C1C;
+
+.btn-default {
+	color: $btn-df-color;
+	background-color: $btn-df-bg-color;
+	border-color: $btn-df-border-color;
+}
+.btn-default:focus,
+.btn-default.focus {
+	color: $btn-df-focus-color;
+	background-color: $btn-df-focus-bg-color;
+	border-color: $btn-df-focus-border-color;
+}
+.btn-default:hover {
+	color:  $btn-df-hover-color;
+	background-color: $btn-df-hover-bg-color;;
+	border-color: $btn-df-hover-border-color;
+}
+.btn-default:active,
+.btn-default.active,
+.open > .dropdown-toggle.btn-default {
+	color: $btn-df-active-color;
+	background-color: $btn-df-active-bg-color;
+	border-color: $btn-df-active-border-color;
+}
+.btn-default:active:hover,
+.btn-default.active:hover,
+.open > .dropdown-toggle.btn-default:hover,
+.btn-default:active:focus,
+.btn-default.active:focus,
+.open > .dropdown-toggle.btn-default:focus,
+.btn-default:active.focus,
+.btn-default.active.focus,
+.open > .dropdown-toggle.btn-default.focus {
+	color: $btn-df-active-hover-color;
+	background-color: $btn-df-active-hover-bg-color;
+	border-color: $btn-df-active-hover-border-color;
+}
+.btn-default:active,
+.btn-default.active,
+.open > .dropdown-toggle.btn-default {
+	background-image: none;
+}
+.btn-default.disabled,
+.btn-default[disabled],
+fieldset[disabled] .btn-default,
+.btn-default.disabled:hover,
+.btn-default[disabled]:hover,
+fieldset[disabled] .btn-default:hover,
+.btn-default.disabled:focus,
+.btn-default[disabled]:focus,
+fieldset[disabled] .btn-default:focus,
+.btn-default.disabled.focus,
+.btn-default[disabled].focus,
+fieldset[disabled] .btn-default.focus,
+.btn-default.disabled:active,
+.btn-default[disabled]:active,
+fieldset[disabled] .btn-default:active,
+.btn-default.disabled.active,
+.btn-default[disabled].active,
+fieldset[disabled] .btn-default.active {
+	color: $btn-df-disabled-color;
+	background-color: $btn-df-disabled-bg-color ;
+	border-color: $btn-df-disabled-border-color;
+	cursor: auto;
+}
+.btn-default .badge {
+	color: $btn-df-badge-color;
+	background-color: $btn-df-badge-bg-color;
+}

@@ -1,0 +1,25 @@
+.footer {
+	&.footer-fluid-paddings {
+		padding: 70px 70px 70px 70px;
+		@media (max-width: $screen-sm-max) { padding: 35px 35px 35px 35px; }
+		@media (max-width: $screen-xs-max) { padding: 15px 15px 15px 15px; }
+	}
+	.footer-contact {
+		h3 {
+			color: #ffffff;
+			margin: 0;
+			padding-bottom: 1em;
+		}
+		h4 {color: #808080;}
+		@media (max-width: $screen-xs-max) { margin-bottom: 2em; }
+	}
+	button { width: 100%; }
+	p.footer-message {
+		display: none;
+		color: #ffffff;
+		text-align: center;
+		@media (max-width: $screen-xs-max) { padding-top: 0.7em; }
+		padding-bottom: 1em;
+		font-size: 1.2em;
+	}
+}

@@ -1,0 +1,31 @@
+.container-fluid.footer.footer-fluid-paddings
+	.row
+		.col-xs-12.col-sm-5.col-md-5.col-lg-5.footer-contact
+			h3 Как мы можем вам помочь?
+			h4 Если вы заинтересованы в наших услугах, не стесняйтесь связаться с нами.
+			h4 Это будет первым шагом к реализации вашего проекта.
+		.col-xs-12.col-sm-7.col-md-7.col-lg-7
+			form
+				.row
+					.col-xs-12.col-sm-6.col-md-6.col-lg-6
+						.form-group
+							label.sr-only(for="inputName") Имя
+							input#inputName.form-control(type="text" placeholder="Имя*" data-toggle="tooltip" data-placement="bottom")
+						.form-group
+							label.sr-only(for="inputEmail") Email
+							input#inputEmail.form-control(type="email" placeholder="Email*" data-toggle="tooltip" data-placement="bottom")
+					.col-xs-12.col-sm-6.col-md-6.col-lg-6
+						.form-group
+							label.sr-only(for="inputPhoneSkype") Phone/Skype
+							input#inputPhoneSkype.form-control(type="tel" placeholder="Телефон/Skype" data-toggle="tooltip" data-placement="bottom")
+						.form-group
+							label.sr-only(for="inputCompany") Организация
+							input#inputCompany.form-control(type="text" placeholder="Организация" data-toggle="tooltip" data-placement="bottom")
+				.form-group
+					label.sr-only(for="inputMessage") Сообщение
+					textarea#inputMessage.form-control(type="text" placeholder="Сообщение*" row="3")
+				.row
+					.col-xs-12.col-sm-6.col-md-6.col-lg-6
+						p#message.footer-message
+					.col-xs-12.col-sm-6.col-md-6.col-lg-6
+						button#btnSend.btn.btn-default(type="submit" disabled="disabled") Отправить

@@ -1,0 +1,41 @@
+@import "partials/variables";
+html,body,h1,h2,h3,h4,h5,h6,p,a,span { font-family: 'Georgia', sans-serif; }
+@import "partials/btn";
+@import "partials/btn-default";
+@import "partials/form";
+@import "partials/header";
+@import "partials/content";
+@import "partials/footer";
+body { background: #1C1C1C; }
+a, a:active, a:visited {
+	color: #808080;
+	text-decoration: none;
+}
+a:hover, a:focus {
+	color: #ffffff;
+	text-decoration: none;
+	cursor: pointer;
+}
+
+.img {
+	background: center top rgba(28, 28, 28, 1) fixed;
+	background-size: cover;
+}
+
+.img-style {
+	@extend .img;
+	background-image: url("../img/Style-1920.jpg") ;
+	@media (max-width: $screen-sm-max) { background-image: url("../img/Style-768.jpg"); }
+}
+
+.img-spartial {
+	@extend .img;
+	background-image: url("../img/Spartial-1920.jpg");
+	@media (max-width: $screen-sm-max) { background-image: url("../img/Spartial-768.jpg"); }
+}
+
+.img-coffee {
+	@extend .img;
+	background-image: url("../img/Coffee-Shop-1920.jpg");
+	@media (max-width: $screen-sm-max) { background-image: url("../img/Coffee-Shop-768.jpg"); }
+}
