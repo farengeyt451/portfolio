@@ -19,7 +19,13 @@
 		padding: 0;
 	}
 	p, li {
+		font-size: 15px;
+		line-height: 20px;
 		color: #808080;
+		@media (max-width: 600px) {
+			font-size: 14px;
+			line-height: 16px;
+		}
 	}
 	.autors-margin {
 		margin-bottom: 70px;
