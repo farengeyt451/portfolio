@@ -1,5 +1,6 @@
 @import "partials/variables";
-html,body,h1,h2,h3,h4,h5,h6,p,a,span { font-family: 'Georgia', sans-serif; }
+@import "partials/fonts.scss";
+html,body,h1,h2,h3,h4,h5,h6,p,a,span { font-family: "Droid Serif", sans-serif; }
 @import "partials/btn";
 @import "partials/btn-default";
 @import "partials/form";
