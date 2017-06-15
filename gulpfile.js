@@ -63,7 +63,7 @@ var path = {
 // Создаем перемнную настроек Dev сервера (build)
 var devconf = {
 		server: "build",
-		port: 3000,
+		port: 2000,
 		logPrefix: "Farengeyt451",
 		// browser: ["google-chrome", "firefox"],
 		notify: true
@@ -72,7 +72,7 @@ var devconf = {
 // Создаем перемнную настроек Dev сервера (production)
 var prodconf = {
 		server: "production",
-		port: 3000,
+		port: 2000,
 		logPrefix: "Farengeyt451",
 		// tunnel: true,
 		notify: true

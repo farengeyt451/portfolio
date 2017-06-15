@@ -96,7 +96,7 @@ $(document).ready(function () {
 				};
 				$.ajax({
 						method: "POST",
-						url: "//formspree.io/black-sky@outlook.com",
+						url: "//formspree.io/strannik11.92@gmail.com",
 						dataType: "json",
 						data: dataSet,
 						success: function () {
