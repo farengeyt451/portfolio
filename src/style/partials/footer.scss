@@ -13,7 +13,7 @@
 		h4 {color: #808080;}
 		@media (max-width: $screen-xs-max) { margin-bottom: 2em; }
 	}
-	button { width: 100%; }
+	button { width: 100%; text-transform: uppercase; }
 	p.footer-message {
 		display: none;
 		color: #ffffff;
