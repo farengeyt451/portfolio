@@ -106,7 +106,7 @@ $(document).ready(function () {
 								});
 								flagName = false; flagEmail = false; flagMessage = false;
 								isEnable();
-								$message.text("Сообщение отправлено. Скоро мы вам ответим.").slideDown(500);
+								$message.text("Сообщение отправлено. Спасибо!").slideDown(500);
 						},
 						error: function(jqXHR, exception) {
 								if (jqXHR.status === 0) {
