@@ -37,7 +37,8 @@ var path = {
 		fonts: "production/fonts/"
 	},
 	src: {						// Указываем пути откуда брать исходники
-		html: "src/**/*.pug",
+		html: "src/index.pug",
+		// html: "src/**/*.pug",
 		js: "src/js/*.js",
 		style: "src/style/main.scss",
 		img: "src/img/**/*.*",
