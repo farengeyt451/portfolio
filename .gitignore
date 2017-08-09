@@ -110,6 +110,9 @@ bower_components
 .bower-registry
 .bower-tmp
 
+### Dolphin ###
+.directory
+
 ### Directories ###
 ### build ###
 texts
