@@ -61,11 +61,10 @@ a, a:active, a:visited {
 }
 
 .img-blink {
-	@extend .img;
+	height: 100%;
+	background: center top rgba(28, 28, 28, 1) fixed;
+	background-size: cover;
 	background-image: url("../img/Blink-1920.jpg");
-	@media (max-width: $screen-sm-max) {
-		background-image: url("../img/Blink-768.jpg");
-	}
 }
 
 .img-business {
