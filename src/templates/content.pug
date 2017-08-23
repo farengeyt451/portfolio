@@ -1,23 +1,34 @@
 .container-fluid
-	.row
+	.row.row-flex
 		.col
-			.photo-container
-				.img-blink
+			.photo-container(style="background-image:url(https://source.unsplash.com/1000x250/?sig=1)")
 			h2 Blink
 			.slide
 				p Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod.
-	.row
+	.row.row-flex
 		.col
-			.photo-container(style="background-image:url(https://source.unsplash.com/600x250/?sig=273)")
-			h2 Image 273
+			.photo-container(style="background-image:url(https://source.unsplash.com/1000x250/?sig=3)")
+			h2 Denteez
+			.slide
+				p Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod.
+	.row.row-flex
+		.col
+			.photo-container(style="background-image:url(https://source.unsplash.com/1000x250/?sig=4)")
+			h2 Consulting Firm
+			.slide
+				p Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod.
+	.row.row-flex
+		.col.style
+			.photo-container(style="background-image:url(https://source.unsplash.com/1000x250/?sig=273)")
+			h2 Style
 			.slide
 				p Quam molestiae ipsa sapiente mollitia, nobis.
-		.col
-			.photo-container(style="background-image:url(https://source.unsplash.com/600x250/?sig=194)")
-			h2 Image 194
+		.col.coffe-shop
+			.photo-container(style="background-image:url(https://source.unsplash.com/1000x250/?sig=194)")
+			h2 Coffee Shop
 			.slide
 				p Lorem ipsum dolor sit amet, consectetur adipisicing elit.
-	.row
+	.row.row-flex
 		.col
 			.img-blink
 		//- .col-xs-12.col-sm-12.col-md-12.col-lg-12.content.content-paddings

@@ -56,9 +56,9 @@ var path = {
 		production: "production/*"
 	},
 	copy: {
-		js: "src/modules/js/*.js",
-		css: "src/modules/css/*.css"
-	} 
+		js: ["node_modules/bootstrap/dist/js/bootstrap.min.js", "node_modules/jquery/dist/jquery.min.js"],
+		css: "node_modules/bootstrap/dist/css/bootstrap.min.css"
+	}
 };
 
 // Создаем перемнную настроек Dev сервера (build)
@@ -79,23 +79,23 @@ var prodconf = {
 		notify: true
 };
 
-// Создаем задание собрать HTML
-gulp.task("html:build", function () {
-	return gulp.src(path.src.html)
-		.pipe(plumber())
-		.pipe(pug({
-			pretty: true
-		}))		
-		.pipe(gulpIf(isDevelopment, gulp.dest(path.build.html), gulp.dest(path.production.html)))
-		.pipe(bs.stream());
-});
-
 // Создаем задание скопировать js и css
 gulp.task("copy", function () {
 	return gulp.src(path.copy.js)
 		.pipe(gulpIf(isDevelopment, gulp.dest(path.build.js), gulp.dest(path.production.js)))
 		.pipe(gulp.src(path.copy.css))
 		.pipe(gulpIf(isDevelopment, gulp.dest(path.build.css), gulp.dest(path.production.css)))
+		.pipe(bs.stream());
+});
+
+// Создаем задание собрать HTML
+gulp.task("html:build", function () {
+	return gulp.src(path.src.html)
+		.pipe(plumber())
+		.pipe(pug({
+			pretty: true
+		}))
+		.pipe(gulpIf(isDevelopment, gulp.dest(path.build.html), gulp.dest(path.production.html)))
 		.pipe(bs.stream());
 });
 
