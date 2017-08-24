@@ -1,18 +1,17 @@
 .fluid-paddings {
 	padding: 70px;
 	@media (max-width: 767px) {
-		padding: 35px 35px 70px 35px;
+		padding: 35px;
 		}
 	@media (max-width: 479px) {
-		padding: 15px 15px 30px 15px;
+		padding: 15px;
 	}
 }
 .header {
 	h4 {
-		color: #ffffff;
+		color: #FFF;
 		margin: 0;
 		padding-bottom: 20px;
-		// text-align: center;
 	}
 	ul {
 		list-style: none;
@@ -47,17 +46,17 @@
 				}
 			}
 			img {
-				width: 200px;
 				height: 143px;
+				width: 200px;
 			}
 			.fampad-text {
 				float: left;
-				padding-top: 18.5px;
 				padding-left: 18.5px;
+				padding-top: 18.5px;
 				@media (max-width: 767px) {
 					float: none;
-					text-align: center;
 					padding-left: 0;
+					text-align: center;
 				}
 				h1 {
 					color: white;
@@ -76,5 +75,4 @@
 	.about-me {
 		padding-bottom: 2em;
 	}
-
 }
