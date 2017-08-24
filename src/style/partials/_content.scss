@@ -72,25 +72,6 @@ body {
 			z-index: 0;
 		}
 	}
-	.blink {
-		background-image: url("../img/1.jpg");
-		height: 100%;
-		width: 100%;
-	}
-	.denteez {
-		background-image: url("../img/recoms.svg");
-		height: 100%;
-		width: 100%;
-	}
-	.consulting-firm {
-
-	}
-	.style {
-		min-width: 40%;
-	}
-	.coffe-shop {
-		min-width: 60%;
-	}
 	.photo-container {
 		background: transparent 50% 50% / cover;
 		position: absolute;
@@ -99,7 +80,7 @@ body {
 		transition: 1s;
 		&::before {
 			// background: transparent;
-			background: linear-gradient(transparent, rgba(#431133, 0.5), #000320);
+			background: rgba(0, 0, 0, 0.8);
 			content: '';
 			position: absolute;
 			top: 0; right: 0; bottom: 0; left: 0;
@@ -113,3 +94,31 @@ body {
 		padding: 0 1.5rem;
 	}
 }
+
+.blink {
+	background-image: url("../img/1.jpg");
+	height: 100%;
+	width: 100%;
+}
+.denteez {
+	background-image: url("../img/2.svg");
+	height: 100%;
+	width: 100%;
+}
+.consulting-firm {
+
+}
+.style {
+	min-width: 40%;
+}
+.coffe-shop {
+	min-width: 60%;
+}
+
+		.col:hover {
+			.photo-container {
+				&::before {
+					background: rgba(0, 0, 0, 0.5);
+				}
+			}
+		}
