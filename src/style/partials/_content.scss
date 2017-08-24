@@ -1,5 +1,6 @@
 body {
-	background-color: #1C1C1C;
+	// background-color: #1C1C1C;
+
 	a, a:active, a:visited {
 		color: #808080;
 		text-decoration: none;
@@ -96,25 +97,40 @@ body {
 }
 
 .blink {
-	background-image: url("../img/1.jpg");
+	background: url("../img/1.jpg");
+	background-position: center;
+	background-size: cover;
 	height: 100%;
 	width: 100%;
 }
 .denteez {
-	background-image: url("../img/2.svg");
+	background-image: url("../img/1.jpg");
 	height: 100%;
 	width: 100%;
 }
 .consulting-firm {
-
+	background-image: url("../img/1.jpg");
+	height: 100%;
+	width: 100%;
 }
 .style {
-	min-width: 40%;
+	width: 100%;
+	height: 100%;
+	background-image: url("../img/1.jpg");
 }
 .coffe-shop {
-	min-width: 60%;
+	width: 100%;
+	height: 100%;
+	background-image: url("../img/1.jpg");
 }
-
+.size-1 {
+	width: 40%;
+	height: 100%;
+}
+.size-2 {
+	width: 60%;
+	height: 100%;
+}
 		.col:hover {
 			.photo-container {
 				&::before {
