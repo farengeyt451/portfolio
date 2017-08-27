@@ -83,24 +83,26 @@
 // 	}
 // }
 .container-fluid {
-	background-color: #ECEFF0;
+	margin: 0;
 	padding: 0;
-}
-.cont-header {
-	background-image: url("../img/black-sky-n.svg");
-	filter: grayscale(100%);
-	background-position: center center;
-	background-repeat: no-repeat;
-	background-size: cover;
 	height: 100vh;
-	.row {
-		padding: 0;
-		margin: 0;
-	}
-	.img-log {
+	// background-color: #666;
+	.cont-header {
 		img {
-			height: 150px;
-			width: 200px;
+			width:100%;
+			position:absolute;
+			bottom: 0;
 		}
+		.text {
+			height: 200px;
+			position: absolute;
+			top: 10px;
+			text-align: left;
+		}
+		background-image: url("../img/background-1.svg");
+		height: 100vh;
+		background-size: cover;
+		background-position: bottom center;
+		background-repeat: no-repeat;
 	}
 }
