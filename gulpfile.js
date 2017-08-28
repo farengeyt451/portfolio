@@ -56,8 +56,8 @@ var path = {
 		production: "production/*"
 	},
 	copy: {
-		js: ["node_modules/bootstrap/dist/js/bootstrap.min.js", "node_modules/jquery/dist/jquery.min.js"],
-		css: "node_modules/bootstrap/dist/css/bootstrap.min.css"
+		js: "node_modules/jquery/dist/jquery.min.js"
+		// css: "node_modules/bootstrap/dist/css/bootstrap.min.css"
 	}
 };
 
@@ -83,8 +83,8 @@ var prodconf = {
 gulp.task("copy", function () {
 	return gulp.src(path.copy.js)
 		.pipe(gulpIf(isDevelopment, gulp.dest(path.build.js), gulp.dest(path.production.js)))
-		.pipe(gulp.src(path.copy.css))
-		.pipe(gulpIf(isDevelopment, gulp.dest(path.build.css), gulp.dest(path.production.css)))
+		// .pipe(gulp.src(path.copy.css))
+		// .pipe(gulpIf(isDevelopment, gulp.dest(path.build.css), gulp.dest(path.production.css)))
 		.pipe(bs.stream());
 });
 

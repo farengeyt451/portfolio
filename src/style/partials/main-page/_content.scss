@@ -1,5 +1,5 @@
 body {
-	background-color: #1C1C1C;
+	background-color: #001328;
 
 	a, a:active, a:visited {
 		color: #808080;
@@ -14,7 +14,7 @@ body {
 
 .content {
 	.photo-container {
-		filter: grayscale(100%);
+		filter: grayscale(70%);
 	}
 	.col {
 		overflow: hidden;
@@ -81,7 +81,7 @@ body {
 		transition: 1s;
 		&::before {
 			// background: transparent;
-			background: rgba(0, 0, 0, 0.8);
+			background: rgba(0, 19, 40, 0.8);
 			content: '';
 			position: absolute;
 			top: 0; right: 0; bottom: 0; left: 0;
@@ -134,7 +134,7 @@ body {
 		.col:hover {
 			.photo-container {
 				&::before {
-					background: rgba(0, 0, 0, 0.5);
+					background: rgba(0, 19, 40, 0.4);
 				}
 			}
 		}

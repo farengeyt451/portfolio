@@ -28,6 +28,6 @@
 	},
 	"dependencies": {
 		"jquery": "^3.2.1",
-		"bootstrap": "^3.3.5"
+		"normalize-scss": "^7.0.0"
 	}
 }
