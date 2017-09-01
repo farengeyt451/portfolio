@@ -2,15 +2,23 @@
 	margin: 0;
 	padding: 0;
 }
-
+.fiex-bg {
+	background-color: #001328;
+	background-image: url("../img/background-animated-rocket.svg");
+	background-position: center center;
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-attachment: fixed;
+	min-height: 100px;
+}
 .header {
 	.cont-header {
-		background-color: #001328;
-		background-image: url("../img/background-animated-rocket.svg");
-		background-position: center center;
-		background-repeat: no-repeat;
-		background-size: cover;
-		background-attachment: fixed;
+		// background-color: #001328;
+		// background-image: url("../img/background-animated-rocket.svg");
+		// background-position: center center;
+		// background-repeat: no-repeat;
+		// background-size: cover;
+		// background-attachment: fixed;
 		height: 100vh;
 		overflow: hidden;
 		position:relative;
