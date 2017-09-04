@@ -18,7 +18,7 @@
 	}
 
 	CBPFWTabs.prototype.options = {
-		start : 1
+		start : 0
 	};
 
 	CBPFWTabs.prototype._init = function() {
@@ -31,7 +31,7 @@
 
 	CBPFWTabs.prototype._initEvents = function() {
 		var self = this;
-		this.tabs.forEach(function( tab, idx) {
+		this.tabs.forEach(function(tab, idx) {
 			tab.addEventListener("click", function(ev) {
 				ev.preventDefault();
 				self._show(idx);
@@ -47,8 +47,25 @@
 		this.current = idx != undefined ? idx : this.options.start >= 0 && this.options.start < this.items.length ? this.options.start : 0;
 		this.tabs[this.current].className = "tab-current";
 		this.items[this.current].className = "content-current";
+
 	};
 
 	window.CBPFWTabs = CBPFWTabs;
+
+	$(".icon-projects").on("click", function () {
+		$(".tabs").css("margin-top", "-90vh");
+		$(".name-info ").css("opacity", "0");
+		$(".name-info ").css("top", "0");
+	});
+	$(".icon-about").on("click", function () {
+		$(".tabs").css("margin-top", "-90vh");
+	});
+	$(".icon-contacts").on("click", function () {
+		$(".tabs").css("margin-top", "-90vh");
+	});
+
+	$( document ).ready(function() {
+		$("ul li").removeClass("tab-current");
+	});
 
 })(window);
