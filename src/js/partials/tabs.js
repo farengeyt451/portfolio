@@ -1,9 +1,9 @@
-;( function( window ) {
+;( function(window) {
 	"use strict";
 
 	function extend(a, b) {
 		for(var key in b) {
-			if(b.hasOwnProperty( key )) {
+			if(b.hasOwnProperty(key)) {
 				a[key] = b[key];
 			}
 		}
@@ -51,4 +51,4 @@
 
 	window.CBPFWTabs = CBPFWTabs;
 
-})( window );
+})(window);

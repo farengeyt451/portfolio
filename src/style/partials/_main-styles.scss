@@ -1,6 +1,8 @@
 body {
 	margin: 0;
 	// box-sizing: border-box;
+	height: 100vh;
+	overflow: hidden;
 }
 
 .container-fluid {
@@ -18,7 +20,7 @@ body {
 		padding: 0;
 	}
 	.particle-network-animation {
-		height: 200px;
+		height: 100vh;
 		canvas {
 			width: 100%;
 		}
@@ -32,7 +34,7 @@ body {
 		transform: translate(-50%, 0);
 	}
 	.name-info {
-		height: 200px;
+		// height: 200px;
 		h2, h3 {
 			vertical-align: middle;
 			font-weight: normal;
@@ -44,7 +46,8 @@ body {
 // Main content
 .tabs {
 	margin-top: -62px;
-	position: relative;
+	position: absolute;
+	top: 100%;
 	width: 100%;
 	min-width: 240px;
 	overflow: hidden;
