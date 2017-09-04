@@ -1,23 +1,41 @@
+// @font-face {
+// 	font-family: "Droid Serif";
+// 	src: url("../fonts/DroidSerif-Bold.eot");
+// 	src: url("../fonts/DroidSerif-Bold.eot?#iefix") format("embedded-opentype"),
+// 		url("../fonts/DroidSerif-Bold.woff") format("woff"),
+// 		url("../fonts/DroidSerif-Bold.ttf") format("truetype");
+// 	font-weight: bold;
+// 	font-style: normal;
+// }
+
+// @font-face {
+// 	font-family: "Droid Serif";
+// 	src: url("../fonts/DroidSerif.eot");
+// 	src: url("../fonts/DroidSerif.eot?#iefix") format("embedded-opentype"),
+// 		url("../fonts/DroidSerif.woff") format("woff"),
+// 		url("../fonts/DroidSerif.ttf") format("truetype");
+// 	font-weight: normal;
+// 	font-style: normal;
+// }
 @font-face {
-	font-family: "Droid Serif";
-	src: url("../fonts/DroidSerif-Bold.eot");
-	src: url("../fonts/DroidSerif-Bold.eot?#iefix") format("embedded-opentype"),
-		url("../fonts/DroidSerif-Bold.woff") format("woff"),
-		url("../fonts/DroidSerif-Bold.ttf") format("truetype");
+	font-family: "Montserrat";
+	src: url("../fonts/Montserrat-Bold.eot");
+	src: url("../fonts/Montserrat-Bold.eot?#iefix") format("embedded-opentype"), url("../fonts/Montserrat-Bold.woff") format("woff"), url("../fonts/Montserrat-Bold.ttf") format("truetype");
 	font-weight: bold;
 	font-style: normal;
 }
 
+
 @font-face {
-	font-family: "Droid Serif";
-	src: url("../fonts/DroidSerif.eot");
-	src: url("../fonts/DroidSerif.eot?#iefix") format("embedded-opentype"),
-		url("../fonts/DroidSerif.woff") format("woff"),
-		url("../fonts/DroidSerif.ttf") format("truetype");
+	font-family: "Montserrat";
+	src: url("../fonts/Montserrat-Regular.eot");
+	src: url("../fonts/Montserrat-Regular.eot?#iefix") format("embedded-opentype"), url("../fonts/Montserrat-Regular.woff") format("woff"), url("../fonts/Montserrat-Regular.ttf") format("truetype");
 	font-weight: normal;
 	font-style: normal;
 }
-
+* {
+	font-family: "Montserrat", sans-serif;
+}
 @font-face {
 	font-family: "icomoon";
 	src:  url("../fonts/icomoon.eot?fcec72");
@@ -44,9 +62,9 @@
 	-moz-osx-font-smoothing: grayscale;
 }
 
-* {
-	font-family: "Droid Serif", sans-serif;
-}
+// * {
+// 	font-family: "Droid Serif", sans-serif;
+// }
 
 .icon-nodejs:before {
 	content: "\e90c";
