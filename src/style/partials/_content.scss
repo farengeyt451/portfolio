@@ -7,7 +7,7 @@
 	top: 100%;
 	width: 100%;
 	transition: 0.5s;
-	margin-top: -60px;
+	margin-top: -62px;
 	overflow: hidden;
 	nav {
 		text-align: center;
@@ -21,31 +21,31 @@
 				display: block;
 				position: relative;
 				float: left;
-				border: 1px solid #BECBD2;
+				border: 2px solid #BECBD2;
 				border-bottom: none;
 				margin: 0 4px;
 			}
 		}
 		.tab-current {
-			border: 1px solid #47A3DA;
+			border: 2px solid #47A3DA;
 			box-shadow: inset 0 2px #47A3DA;
 			border-bottom: none;
 			z-index: 100;
 			&:before {
 				content: "";
 				position: absolute;
-				height: 1px;
+				height: 2px;
 				right: 100%;
-				bottom: 0;
+				bottom: -1px;
 				width: 100vw;
 				background: #47A3DA;
 			}
 			&:after {
 				content: "";
 				position: absolute;
-				height: 1px;
+				height: 2px;
 				right: 100%;
-				bottom: 0;
+				bottom: -1px;
 				width: 100vw;
 				background: #47A3DA;
 				right: auto;
@@ -56,13 +56,14 @@
 		a {
 			display: block;
 			text-decoration: none;
-			color: #BECBD2;
+			color: #A7B2B8;
 			font-size: 24px;
 			line-height: 2.5;
 			padding: 0 20px;
 			white-space: nowrap;
+			transition: 0.2s;
 			&:hover {
-				color: #768E9D;
+				color: #47A3DA;
 			}
 		}
 		.tab-current {

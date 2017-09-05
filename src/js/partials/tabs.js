@@ -54,6 +54,7 @@
 
 	$(".icon-projects, .icon-about, .icon-contatcs").on("click", function () {
 		$(".tabs").css("margin-top", "-100vh");
+		$(".name-info").css("opacity", "0");
 		if( /Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent) ) {
 			$(".tabs").css("margin-top", "-80vh");
 		}
