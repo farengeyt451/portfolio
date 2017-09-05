@@ -1,0 +1,122 @@
+// ------------
+// Main content
+// ------------
+
+.tabs {
+	position: absolute;
+	top: 100%;
+	width: 100%;
+	transition: 0.5s;
+	margin-top: -60px;
+	overflow: hidden;
+	nav {
+		text-align: center;
+		ul {
+			display: inline-block;
+			list-style: none;
+			padding: 0;
+			margin: 0;
+			li {
+				background-color: rgba(255, 255, 255, 0.6);
+				display: block;
+				position: relative;
+				float: left;
+				border: 1px solid #BECBD2;
+				border-bottom: none;
+				margin: 0 4px;
+			}
+		}
+		.tab-current {
+			border: 1px solid #47A3DA;
+			box-shadow: inset 0 2px #47A3DA;
+			border-bottom: none;
+			z-index: 100;
+			&:before {
+				content: "";
+				position: absolute;
+				height: 1px;
+				right: 100%;
+				bottom: 0;
+				width: 100vw;
+				background: #47A3DA;
+			}
+			&:after {
+				content: "";
+				position: absolute;
+				height: 1px;
+				right: 100%;
+				bottom: 0;
+				width: 100vw;
+				background: #47A3DA;
+				right: auto;
+				left: 100%;
+				width: 100vw;
+			}
+		}
+		a {
+			display: block;
+			text-decoration: none;
+			color: #BECBD2;
+			font-size: 24px;
+			line-height: 2.5;
+			padding: 0 20px;
+			white-space: nowrap;
+			&:hover {
+				color: #768E9D;
+			}
+		}
+		.tab-current {
+			a {
+				color: #47A3DA;
+			}
+		}
+		a:before {
+			display: inline-block;
+			text-transform: none;
+			font-weight: normal;
+			font-variant: normal;
+			font-family: "icomoon";
+			line-height: 1;
+			speak: none;
+			-webkit-font-smoothing: antialiased;
+			margin: -4px 6px 0 0;
+		}
+		.icon-projects:before {
+			content: "\f121";
+		}
+
+		.icon-about:before {
+			content: "\f033";
+		}
+
+		.icon-contacts:before {
+			content: "\f0ac";
+		}
+	}
+	.tabs-content {
+		background-color: #FFF;
+		height: 100vh;
+		margin-top: -5px;
+	}
+	.content {
+		max-width: 1230px;
+		margin: 0 auto;
+		section {
+			font-size: 12px;
+			display: none;
+			margin: 0 auto;
+			&:before {
+				content: "";
+				display: table;
+			}
+			&:after {
+				content: "";
+				display: table;
+				clear: both;
+			}
+		}
+		.content-current {
+			display: block;
+		}
+	}
+}

@@ -52,30 +52,15 @@
 
 	window.CBPFWTabs = CBPFWTabs;
 
-	$(".icon-projects").on("click", function () {
-		$(".tabs").css("margin-top", "calc(-90vh + 30px)");
-		$(".name-info ").css("opacity", "0");
-		// $(".name-info ").css("top", "-100%");
-	});
-
-	$(".icon-about").on("click", function () {
-		$(".tabs").css("margin-top", "calc(-90vh + 30px)");
-		$(".name-info ").css("opacity", "0");
-	});
-
-	$(".icon-contacts").on("click", function () {
-		$(".tabs").css("margin-top", "calc(-90vh + 30px)");
-		$(".name-info ").css("opacity", "0");
+	$(".icon-projects, .icon-about, .icon-contatcs").on("click", function () {
+		$(".tabs").css("margin-top", "-100vh");
+		if( /Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent) ) {
+			$(".tabs").css("margin-top", "-80vh");
+		}
 	});
 
 	$( document ).ready(function() {
 		$("ul li").removeClass("tab-current");
 	});
 
-	$(window).click(function(event) {
-		console.log(event);
-		if (event.target === $("canvas")) {
-			alert("$");
-		}
-	});
 })(window);

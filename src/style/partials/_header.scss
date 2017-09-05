@@ -1,0 +1,75 @@
+// ------
+// Header
+// ------
+
+.header {
+	.row {
+		margin: 0;
+	}
+	.col {
+		padding: 0;
+	}
+	.particle-network-animation {
+		height: 100vh;
+		transition: 0.5s;
+		canvas {
+			width: 100%;
+		}
+	}
+	.header-content {
+		width: 100vw;
+		max-width: 1230px;
+		position: absolute;
+		top: 0;
+		left: 50%;
+		transform: translate(-50%, 0);
+	}
+	.name-info {
+		color: #768E9D;
+		opacity: 1;
+		transition: 0.5s;
+		background-color: rgba(255, 255, 255, 0.6);
+		position: absolute;
+		top: 20%;
+		left: 10%;
+		cursor: default;
+		display: inline-block;
+		padding: 15px 30px;
+		border: 2px solid #47A3DA;
+		span {
+			display: inline-block;
+			padding-bottom: 10px;
+			font-size: 28px;
+			animation: type 4s steps(60, end);
+			white-space: nowrap;
+			overflow: hidden;
+		}
+		p {
+			font-size: 20px;
+			overflow: hidden;
+			border-right: 2px solid #768E9D;
+			white-space: nowrap;
+			margin: 0 auto;
+			letter-spacing: 2px;
+			animation: typing 3.5s steps(30, end), blink-caret .5s step-end infinite;
+		}
+	}
+}
+
+@keyframes typing {
+	0% {
+		width: 0
+	}
+	100% {
+		width: 100%
+	}
+}
+
+@keyframes blink-caret {
+	0%, 100% {
+		border-color: transparent
+	}
+	50% {
+		border-color: #768E9D
+	}
+}

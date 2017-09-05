@@ -1,22 +1,3 @@
-// @font-face {
-// 	font-family: "Droid Serif";
-// 	src: url("../fonts/DroidSerif-Bold.eot");
-// 	src: url("../fonts/DroidSerif-Bold.eot?#iefix") format("embedded-opentype"),
-// 		url("../fonts/DroidSerif-Bold.woff") format("woff"),
-// 		url("../fonts/DroidSerif-Bold.ttf") format("truetype");
-// 	font-weight: bold;
-// 	font-style: normal;
-// }
-
-// @font-face {
-// 	font-family: "Droid Serif";
-// 	src: url("../fonts/DroidSerif.eot");
-// 	src: url("../fonts/DroidSerif.eot?#iefix") format("embedded-opentype"),
-// 		url("../fonts/DroidSerif.woff") format("woff"),
-// 		url("../fonts/DroidSerif.ttf") format("truetype");
-// 	font-weight: normal;
-// 	font-style: normal;
-// }
 @font-face {
 	font-family: "Montserrat";
 	src: url("../fonts/Montserrat-Bold.eot");
@@ -25,7 +6,6 @@
 	font-style: normal;
 }
 
-
 @font-face {
 	font-family: "Montserrat";
 	src: url("../fonts/Montserrat-Regular.eot");
@@ -33,9 +13,7 @@
 	font-weight: normal;
 	font-style: normal;
 }
-* {
-	font-family: "Montserrat", sans-serif;
-}
+
 @font-face {
 	font-family: "icomoon";
 	src:  url("../fonts/icomoon.eot?fcec72");
@@ -48,7 +26,6 @@
 }
 
 [class^="icon-"], [class*=" icon-"] {
-	/* use !important to prevent issues with browser extensions that change fonts */
 	font-family: "icomoon" !important;
 	speak: none;
 	font-style: normal;
@@ -62,9 +39,9 @@
 	-moz-osx-font-smoothing: grayscale;
 }
 
-// * {
-// 	font-family: "Droid Serif", sans-serif;
-// }
+* {
+	font-family: "Montserrat", sans-serif;
+}
 
 .icon-nodejs:before {
 	content: "\e90c";
@@ -248,4 +225,3 @@
 .icon-html5:before {
 	content: "\eae4";
 }
-
