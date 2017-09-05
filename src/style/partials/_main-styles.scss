@@ -40,15 +40,15 @@ body {
 		top: 20%;
 		left: 10%;
 		cursor: default;
-		// display: inline-block;
+		display: inline-block;
 		padding: 15px 30px;
 		border: 2px solid #47A3DA;
 		span:first-child {
 			font-size: 28px;
 		}
 		span {
-			display: block;
-			width: 400px;
+			display: inline;
+			// width: 400px;
 			line-height: 40px;
 			color: #768E9D;
 			font-size: 20px;
@@ -63,6 +63,7 @@ body {
 	top: 100%;
 	width: 100%;
 	min-width: 240px;
+	min-height: 240px;
 	transition: 0.5s;
 	margin-top: -60px;
 	overflow: hidden;
@@ -74,6 +75,7 @@ body {
 			padding: 0;
 			margin: 0;
 			li {
+				background-color: rgba(255, 255, 255, 0.6);
 				display: block;
 				position: relative;
 				float: left;
@@ -185,28 +187,64 @@ body {
 			top: 20%;
 			left: 50%;
 			transform: translate(-50%, 0);
-			// padding: 15px 30px;
-			// border: 2px solid #47A3DA;
-			// span:first-child {
-			// 	font-size: 28px;
-			// }
-			// span {
-			// 	line-height: 40px;
-			// 	color: #768E9D;
-			// 	font-size: 20px;
-			// }
+			text-align: center;
+		}
+	}
+	.tabs {
+		margin-top: -50px;
+		nav {
+			a {
+				font-size: 20px;
+			}
+		}
+	}
+}
+
+@media screen and (max-width: 768px) {
+	.header {
+		.name-info {
+			span:first-child {
+				font-size: 22px;
+			}
+			span {
+
+				line-height: 28px;
+				color: #768E9D;
+				font-size: 14px;
+			}
 		}
 	}
 }
 
 
 @media screen and (max-width: 560px) {
-	.tabs nav a {
-		span {
-			display: none;
+	// .tabs nav a {
+	// 	span {
+	// 		display: none;
+	// 	}
+	// 	&:before {
+	// 		margin-right: 0;
+	// 	}
+	// }
+	.tabs {
+		nav{
+			a {
+				span {
+					display: none;
+				}
+				&:before {
+					margin-right: 0;
+				}
+			}
 		}
-		&:before {
-			margin-right: 0;
+	}
+}
+
+@media screen and (max-width: 530px) and (max-height: 300px) {
+	.header {
+		.name-info {
+			top: 5%;
+			padding: 2px 20px;
 		}
 	}
 }
