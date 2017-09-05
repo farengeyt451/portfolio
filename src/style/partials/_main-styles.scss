@@ -33,6 +33,7 @@ body {
 		transform: translate(-50%, 0);
 	}
 	.name-info {
+		color: #768E9D;
 		opacity: 1;
 		transition: 0.5s;
 		background-color: rgba(255, 255, 255, 0.6);
@@ -50,8 +51,25 @@ body {
 			display: inline;
 			// width: 400px;
 			line-height: 40px;
-			color: #768E9D;
 			font-size: 20px;
+		}
+		i {
+			animation: blinking .8s infinite alternate linear;
+			font-size: 20px;
+			&:before {
+				display: inline-block;
+				text-transform: none;
+				font-weight: normal;
+				font-variant: normal;
+				font-family: "icomoon";
+				line-height: 40px;
+				speak: none;
+				padding-left: 5px;
+				-webkit-font-smoothing: antialiased;
+			}
+		}
+		.icon-terminal-1:before {
+			content: "\f120";
 		}
 	}
 }
@@ -246,5 +264,14 @@ body {
 			top: 5%;
 			padding: 2px 20px;
 		}
+	}
+}
+
+@keyframes blinking {
+	0% {
+		opacity: 1;
+	}
+	100% {
+		opacity: 0;
 	}
 }
