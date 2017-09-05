@@ -44,32 +44,23 @@ body {
 		display: inline-block;
 		padding: 15px 30px;
 		border: 2px solid #47A3DA;
-		span:first-child {
-			font-size: 28px;
-		}
 		span {
-			display: inline;
+			display: inline-block;
 			// width: 400px;
-			line-height: 40px;
-			font-size: 20px;
+			padding-bottom: 10px;
+			font-size: 28px;
+			animation: type 4s steps(60, end);
+			white-space: nowrap;
+			overflow: hidden;
 		}
-		i {
-			animation: blinking .8s infinite alternate linear;
+		p {
 			font-size: 20px;
-			&:before {
-				display: inline-block;
-				text-transform: none;
-				font-weight: normal;
-				font-variant: normal;
-				font-family: "icomoon";
-				line-height: 40px;
-				speak: none;
-				padding-left: 5px;
-				-webkit-font-smoothing: antialiased;
-			}
-		}
-		.icon-terminal-1:before {
-			content: "\f120";
+			overflow: hidden;
+			border-right: 2px solid #768E9D;
+			white-space: nowrap;
+			margin: 0 auto;
+			letter-spacing: 2px;
+			animation: typing 3.5s steps(30, end), blink-caret .5s step-end infinite;
 		}
 	}
 }
@@ -221,14 +212,12 @@ body {
 @media screen and (max-width: 768px) {
 	.header {
 		.name-info {
-			span:first-child {
+			span {
 				font-size: 22px;
 			}
-			span {
-
-				line-height: 28px;
-				color: #768E9D;
-				font-size: 14px;
+			p {
+				font-size: 16px;
+				letter-spacing: 1.3px;
 			}
 		}
 	}
@@ -236,14 +225,6 @@ body {
 
 
 @media screen and (max-width: 560px) {
-	// .tabs nav a {
-	// 	span {
-	// 		display: none;
-	// 	}
-	// 	&:before {
-	// 		margin-right: 0;
-	// 	}
-	// }
 	.tabs {
 		nav{
 			a {
@@ -258,6 +239,26 @@ body {
 	}
 }
 
+@media screen and (max-width: 425px) {
+	.header {
+		.name-info {
+			padding: 10px 20px;
+			span {
+				white-space: normal;
+				font-size: 18px;
+				padding-bottom: 5px;
+			}
+			p {
+				font-size: 13px;
+				letter-spacing: 1px;
+				white-space: normal;
+				animation: none;
+				border-right: none;
+			}
+		}
+	}
+}
+
 @media screen and (max-width: 530px) and (max-height: 300px) {
 	.header {
 		.name-info {
@@ -267,11 +268,13 @@ body {
 	}
 }
 
-@keyframes blinking {
-	0% {
-		opacity: 1;
-	}
-	100% {
-		opacity: 0;
-	}
+@keyframes typing {
+	from { width: 0 }
+	to { width: 100% }
+}
+
+/* The typewriter cursor effect */
+@keyframes blink-caret {
+	from, to { border-color: transparent }
+	50% { border-color: #768E9D }
 }
