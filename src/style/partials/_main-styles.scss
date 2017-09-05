@@ -40,13 +40,15 @@ body {
 		top: 20%;
 		left: 10%;
 		cursor: default;
-		display: inline-block;
+		// display: inline-block;
 		padding: 15px 30px;
 		border: 2px solid #47A3DA;
 		span:first-child {
 			font-size: 28px;
 		}
 		span {
+			display: block;
+			width: 400px;
 			line-height: 40px;
 			color: #768E9D;
 			font-size: 20px;
@@ -175,6 +177,28 @@ body {
 		}
 	}
 }
+
+
+@media screen and (max-width: 1024px) {
+	.header {
+		.name-info {
+			top: 20%;
+			left: 50%;
+			transform: translate(-50%, 0);
+			// padding: 15px 30px;
+			// border: 2px solid #47A3DA;
+			// span:first-child {
+			// 	font-size: 28px;
+			// }
+			// span {
+			// 	line-height: 40px;
+			// 	color: #768E9D;
+			// 	font-size: 20px;
+			// }
+		}
+	}
+}
+
 
 @media screen and (max-width: 560px) {
 	.tabs nav a {

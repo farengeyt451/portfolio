@@ -53,19 +53,29 @@
 	window.CBPFWTabs = CBPFWTabs;
 
 	$(".icon-projects").on("click", function () {
-		$(".tabs").css("margin-top", "-90vh");
+		$(".tabs").css("margin-top", "calc(-90vh + 60px)");
 		$(".name-info ").css("opacity", "0");
-		$(".name-info ").css("top", "0");
+		// $(".name-info ").css("top", "-100%");
 	});
+
 	$(".icon-about").on("click", function () {
-		$(".tabs").css("margin-top", "-90vh");
+		$(".tabs").css("margin-top", "calc(-90vh + 60px)");
+		$(".name-info ").css("opacity", "0");
 	});
+
 	$(".icon-contacts").on("click", function () {
-		$(".tabs").css("margin-top", "-90vh");
+		$(".tabs").css("margin-top", "calc(-90vh + 60px)");
+		$(".name-info ").css("opacity", "0");
 	});
 
 	$( document ).ready(function() {
 		$("ul li").removeClass("tab-current");
 	});
 
+	$(window).click(function(event) {
+		console.log(event);
+		if (event.target === $("canvas")) {
+			alert("$");
+		}
+	});
 })(window);

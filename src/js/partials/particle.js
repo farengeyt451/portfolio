@@ -80,8 +80,8 @@
 			velocity: 1, // the higher the faster
 			density: 10000, // the lower the denser
 			netLineDistance: 200,
-			netLineColor: "#929292",
-			particleColors: ["#aaa"] // ["#6D4E5C", "#aaa", "#FFC458" ]
+			netLineColor: "#921048",
+			particleColors: ["#AAA"] // ["#6D4E5C", "#aaa", "#FFC458" ]
 		};
 		this.canvas = parent.canvas;
 		this.ctx = parent.ctx;
