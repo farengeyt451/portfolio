@@ -58,6 +58,19 @@
 	}
 }
 
+
+#show-header {
+	position: absolute;
+	width: 20px;
+	height: 20px;
+	top: 10%;
+	left: 90%;
+	z-index: 2;
+	background-color: green;
+	opacity: 0;
+	cursor: pointer;
+}
+
 @keyframes typing {
 	0% {
 		width: 0

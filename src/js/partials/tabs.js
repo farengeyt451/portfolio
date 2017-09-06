@@ -52,16 +52,28 @@
 
 	window.CBPFWTabs = CBPFWTabs;
 
-	$(".icon-projects, .icon-about, .icon-contatcs").on("click", function () {
+	function removeClass() {
+		$("ul li").removeClass("tab-current");
+	}
+
+	$(document).ready(function() {
+		removeClass();
+	});
+
+	$("#tab1, #tab2, #tab3").on("click", function () {
 		$(".tabs").css("margin-top", "-100vh");
 		$(".name-info").css("opacity", "0");
+		$("#show-header").css("opacity", "1");
 		if( /Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent) ) {
 			$(".tabs").css("margin-top", "-80vh");
 		}
 	});
 
-	$( document ).ready(function() {
-		$("ul li").removeClass("tab-current");
+	$("#show-header").on("click", function () {
+		$(".tabs").css("margin-top", "-62px");
+		$(".name-info").css("opacity", "1");
+		removeClass();
+		$("ul").css("border-bottom", "2px solid #47A3DA");
 	});
 
 })(window);
