@@ -66,6 +66,15 @@
 				color: #47A3DA;
 			}
 		}
+		.icon-projects:hover:before {
+			color: red;
+		}
+		.icon-about:hover:before {
+			color: green;
+		}
+		.icon-contacts:hover:before {
+			color: blue;
+		}
 		.tab-current {
 			a {
 				color: #47A3DA;
@@ -85,11 +94,9 @@
 		.icon-projects:before {
 			content: "\f121";
 		}
-
 		.icon-about:before {
-			content: "\f033";
+			content: "\e914";
 		}
-
 		.icon-contacts:before {
 			content: "\f0ac";
 		}
@@ -98,6 +105,12 @@
 		background-color: #FFF;
 		height: 100vh;
 		margin-top: -5px;
+		border-top: 2px solid #47A3DA;
+	}
+	.scroll-down {
+		height: 60px;
+		width: 100%;
+		background-color: aqua;
 	}
 	.content {
 		max-width: 1230px;

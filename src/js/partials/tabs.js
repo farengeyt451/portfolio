@@ -64,16 +64,21 @@
 		$(".tabs").css("margin-top", "-100vh");
 		$(".name-info").css("opacity", "0");
 		$("#show-header").css("opacity", "1");
-		if( /Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent) ) {
+		$(".tabs-content").css("border-top", "2px solid transparent");
+		if(/Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent)) {
 			$(".tabs").css("margin-top", "-80vh");
 		}
 	});
 
 	$("#show-header").on("click", function () {
+		$("#show-header").css("opacity", "0");
 		$(".tabs").css("margin-top", "-62px");
 		$(".name-info").css("opacity", "1");
-		removeClass();
-		$("ul").css("border-bottom", "2px solid #47A3DA");
+		$(".tabs-content").css("border-top", "2px solid #47A3DA");
+		if($( window ).width() <= 1024) {
+			$(".tabs").css("margin-top", "-52px");
+		}
+		setTimeout(removeClass, 500);
 	});
 
 })(window);

@@ -33,8 +33,6 @@
 	font-variant: normal;
 	text-transform: none;
 	line-height: 1;
-
-	/* Better Font Rendering =========== */
 	-webkit-font-smoothing: antialiased;
 	-moz-osx-font-smoothing: grayscale;
 }
@@ -43,6 +41,12 @@
 	font-family: "Montserrat", sans-serif;
 }
 
+.icon-rocket-2:before {
+	content: "\e914";
+}
+.icon-avocode:before {
+	content: "\e911";
+}
 .icon-nodejs:before {
 	content: "\e90c";
 }
@@ -72,12 +76,11 @@
 }
 .icon-codecademy:before {
 	content: "\e90d";
-	color: #204056;
 }
 .icon-fire:before {
 	content: "\e908";
 }
-.icon-brand2:before {
+.icon-coderwall:before {
 	content: "\e90e";
 }
 .icon-codeschool:before {
@@ -85,7 +88,6 @@
 }
 .icon-coursera:before {
 	content: "\e910";
-	color: #757575;
 }
 .icon-git:before {
 	content: "\e912";
@@ -102,10 +104,16 @@
 .icon-sass:before {
 	content: "\e90b";
 }
+.icon-cancel:before {
+	content: "\e5c9";
+}
+.icon-close:before {
+	content: "\e5cd";
+}
 .icon-mail:before {
 	content: "\f003";
 }
-.icon-heart:before {
+.icon-heart-1:before {
 	content: "\f004";
 }
 .icon-gear:before {
@@ -114,8 +122,17 @@
 .icon-camera:before {
 	content: "\f030";
 }
+.icon-eye:before {
+	content: "\f06e";
+}
+.icon-folder2:before {
+	content: "\f07b";
+}
 .icon-camera-retro:before {
 	content: "\f083";
+}
+.icon-heart-2:before {
+	content: "\f08a";
 }
 .icon-github:before {
 	content: "\f09b";
@@ -123,11 +140,29 @@
 .icon-globe:before {
 	content: "\f0ac";
 }
+.icon-tasks:before {
+	content: "\f0ae";
+}
 .icon-google-plus:before {
 	content: "\f0d5";
 }
 .icon-envelope:before {
 	content: "\f0e0";
+}
+.icon-fighter-jet:before {
+	content: "\f0fb";
+}
+.icon-angle-left:before {
+	content: "\f104";
+}
+.icon-angle-right:before {
+	content: "\f105";
+}
+.icon-angle-up:before {
+	content: "\f106";
+}
+.icon-angle-down:before {
+	content: "\f107";
 }
 .icon-quote-left:before {
 	content: "\f10d";
@@ -174,6 +209,9 @@
 .icon-send:before {
 	content: "\f1d9";
 }
+.icon-server:before {
+	content: "\f233";
+}
 .icon-i-cursor:before {
 	content: "\f246";
 }
@@ -189,13 +227,19 @@
 .icon-internet-explorer:before {
 	content: "\f26b";
 }
+.icon-television:before {
+	content: "\f26c";
+}
+.icon-tv:before {
+	content: "\f26c";
+}
 .icon-edge:before {
 	content: "\f282";
 }
 .icon-hashtag:before {
 	content: "\f292";
 }
-.icon-handshake-o:before {
+.icon-handshake:before {
 	content: "\f2b5";
 }
 .icon-user-circle:before {
@@ -210,7 +254,7 @@
 .icon-grav:before {
 	content: "\f2d6";
 }
-.icon-rocket:before {
+.icon-rocket-1:before {
 	content: "\f033";
 }
 .icon-terminal-2:before {
