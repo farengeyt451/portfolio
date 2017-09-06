@@ -38,20 +38,22 @@
 		border: 2px solid #47A3DA;
 		span {
 			display: inline-block;
-			padding-bottom: 10px;
+			padding: 0 2px 10px 2px;
 			font-size: 28px;
+
 			animation: type 4s steps(60, end);
 			white-space: nowrap;
 			overflow: hidden;
 		}
 		p {
+			visibility: hidden;
 			font-size: 20px;
 			overflow: hidden;
 			border-right: 2px solid #768E9D;
 			white-space: nowrap;
 			margin: 0 auto;
 			letter-spacing: 2px;
-			animation: typing 3.5s steps(30, end), blink-caret .5s step-end infinite;
+			animation: typing-visibility 0s 1s forwards linear, typing 5s 1s steps(30, end), blink-caret .5s step-end infinite;
 		}
 	}
 }
@@ -71,5 +73,11 @@
 	}
 	50% {
 		border-color: #768E9D
+	}
+}
+
+@keyframes typing-visibility {
+	100% {
+		visibility: visible;
 	}
 }
