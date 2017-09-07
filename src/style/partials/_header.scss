@@ -58,29 +58,24 @@
 	}
 }
 
-
-#show-header {
-	// position: absolute;
-	// width: 20px;
-	// height: 20px;
-	// top: 10%;
-	// left: 90%;
-	// z-index: 2;
-	// background-color: green;
-	// opacity: 0;
-	// cursor: pointer;
-}
-.icon-close {
+.icon-angle-down {
 	position: absolute;
-	top: 0;
+	text-align: center;
+	width: 50px;
+	height: 62px;
+	top: -50vh;
 	left: 100%;
-	transform: translate(-200%, 0);
-	// left: 90%;
+	transform: translate(-100%, 0);
 	font-size: 28px;
-	z-index: 2;
+	z-index: 10;
 	cursor: pointer;
 	opacity: 0;
-	line-height: 60px;
+	line-height: 62px;
+	transition: 0.5s;
+	&:hover, &:focus {
+		animation: bounce 2s infinite;
+	}
+
 }
 
 @keyframes typing {
@@ -104,5 +99,17 @@
 @keyframes typing-visibility {
 	100% {
 		visibility: visible;
+	}
+}
+
+@keyframes bounce {
+	0%, 20%, 50%, 80%, 100% {
+		padding-top: 0;
+	}
+	40% {
+		padding-top: 5px;
+	}
+	60% {
+		padding-top: 10px;
 	}
 }
