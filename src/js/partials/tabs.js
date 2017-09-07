@@ -62,18 +62,19 @@
 
 	$("#tab1, #tab2, #tab3").on("click", function () {
 		$(".tabs").css("margin-top", "-100vh");
-		$(".name-info").css("opacity", "0");
 		$("#show-header").css("opacity", "1");
+		$(".name-info").css("opacity", "0");
 		$(".tabs-content").css("border-top", "2px solid transparent");
 		$(".icon-angle-down").css("top", "0");
+		$("body").css("overflow", "visible");
 		if(/Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent)) {
 			$(".tabs").css("margin-top", "-80vh");
 		}
 	});
 
 	$("#show-header").on("click", function () {
-		$("#show-header").css("opacity", "0");
 		$(".tabs").css("margin-top", "-62px");
+		$("#show-header").css("opacity", "0");
 		$(".name-info").css("opacity", "1");
 		$(".tabs-content").css("border-top", "2px solid #47A3DA");
 		if($( window ).width() <= 1024) {
