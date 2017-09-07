@@ -66,7 +66,8 @@
 		$(".name-info").css("opacity", "0");
 		$(".tabs-content").css("border-top", "2px solid transparent");
 		$(".icon-angle-down").css("top", "0");
-		$("body").css("overflow", "visible");
+		$("body").css("overflow-y", "scroll");
+		$("body").css("overflow-x", "hidden");
 		if(/Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent)) {
 			$(".tabs").css("margin-top", "-80vh");
 		}
@@ -77,6 +78,7 @@
 		$("#show-header").css("opacity", "0");
 		$(".name-info").css("opacity", "1");
 		$(".tabs-content").css("border-top", "2px solid #47A3DA");
+		$("body").css("overflow-y", "hidden");
 		if($( window ).width() <= 1024) {
 			$(".tabs").css("margin-top", "-52px");
 		}

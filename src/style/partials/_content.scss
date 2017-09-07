@@ -9,7 +9,7 @@
 	// height: 1000px;
 	transition: 0.5s;
 	margin-top: -62px;
-	// overflow: hidden;
+	overflow-x: hidden;
 	nav {
 		text-align: center;
 		ul {
@@ -25,6 +25,7 @@
 				border: 2px solid #BECBD2;
 				border-bottom: none;
 				margin: 0 4px;
+				transition: 0.5s;
 			}
 		}
 		.tab-current {
@@ -32,28 +33,26 @@
 			box-shadow: inset 0 2px #47A3DA;
 			border-bottom: none;
 			z-index: 1;
-			// &:before {
-			// 	content: "";
-			// 	position: absolute;
-			// 	height: 2px;
-			// 	right: 100%;
-			// 	bottom: -1px;
-			// 	width: calc(50vw - 190px);
-			// 	background: #47A3DA;
-			// }
-			// &:after {
-			// 	content: "";
-			// 	position: absolute;
-			// 	height: 2px;
-			// 	right: 100%;
-			// 	width: calc(50vw - 190px);
-			// 	bottom: -1px;
-			// 	// width: 200px;
-			// 	background: #47A3DA;
-			// 	right: auto;
-			// 	left: 100%;
-			// 	// width: 100vw;
-			// }
+			&:before {
+				content: "";
+				position: absolute;
+				height: 2px;
+				right: 100%;
+				bottom: -1px;
+				width: 100vw;
+				background: #47A3DA;
+			}
+			&:after {
+				content: "";
+				position: absolute;
+				height: 2px;
+				right: 100%;
+				bottom: -1px;
+				background: #47A3DA;
+				right: auto;
+				left: 100%;
+				width: 100vw;
+			}
 		}
 		a {
 			display: block;
@@ -96,7 +95,7 @@
 	}
 	.tabs-content {
 		background-color: #FFF;
-		height: 100vh;
+		// height: 100vh;
 		margin-top: -5px;
 		border-top: 2px solid #47A3DA;
 	}
