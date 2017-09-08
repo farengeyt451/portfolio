@@ -41,6 +41,15 @@
 	font-family: "Montserrat", sans-serif;
 }
 
+.icon-coffee:before {
+	content: "\e917";
+}
+.icon-grid:before {
+	content: "\e915";
+}
+.icon-responsive:before {
+	content: "\e916";
+}
 .icon-rocket-2:before {
 	content: "\e914";
 }
@@ -49,7 +58,6 @@
 }
 .icon-nodejs:before {
 	content: "\e90c";
-	color: #90C53F;
 }
 .icon-photoshop:before {
 	content: "\e900";
@@ -62,7 +70,6 @@
 }
 .icon-yarn:before {
 	content: "\e903";
-	color: #2C8EBB;
 }
 .icon-jquery:before {
 	content: "\e904";
@@ -93,14 +100,12 @@
 }
 .icon-git:before {
 	content: "\e912";
-	color: #F05033;
 }
 .icon-gmail:before {
 	content: "\e913";
 }
 .icon-gulp:before {
 	content: "\e909";
-	color: #D34A47;
 }
 .icon-js:before {
 	content: "\e90a";
@@ -140,7 +145,6 @@
 }
 .icon-github:before {
 	content: "\f09b";
-	color: #0D2636;
 }
 .icon-globe:before {
 	content: "\f0ac";
@@ -270,7 +274,6 @@
 }
 .icon-npm:before {
 	content: "\eab1";
-	color: #CC3534;
 }
 .icon-html5:before {
 	content: "\eae4";
