@@ -123,79 +123,99 @@
 		}
 	}
 }
-
-.skillbar {
-	position:relative;
-	display:block;
-	margin-bottom:15px;
-	width:100%;
-	background:#EEE;
-	height:35px;
-	border-radius:3px;
-	transition:0.4s linear;
-	transition-property:width, background-color;
-	&:hover, &:focus {
-		.skill-bar-percent {
-			color: #000;
-			font-size: 12px;
+.container-skills {
+	h1 {
+		color: #566873;
+		margin-bottom: 25px;
+		font-size: 22px;
+	}
+	.skillbar {
+		position:relative;
+		display:block;
+		margin-bottom:15px;
+		width:100%;
+		background:#EEE;
+		height:35px;
+		border-radius:3px;
+		transition:0.4s linear;
+		transition-property:width, background-color;
+		&:hover, &:focus {
+			cursor: default;
+			.skill-bar-percent {
+				color: #566873;
+				font-size: 14px;
+			}
+			.skillbar-title {
+				background-color: #BAFF60;
+			}
 		}
 	}
-}
-
-.skillbar-title {
-	position:absolute;
-	top:0;
-	left:0;
-	font-weight:bold;
-	font-size:13px;
-	color:#FFF;
-	background:#6ADCFA;
-	border-top-left-radius:3px;
-	border-bottom-left-radius:3px;
-	span {
-		min-width: 80px;
-		text-align: center;
-		display:block;
-		background:rgba(0, 0, 0, 0.1);
-		padding:0 20px;
-		height:35px;
-		line-height:35px;
+	.skillbar-title {
+		position:absolute;
+		top:0;
+		left:0;
+		font-weight:bold;
+		font-size:14px;
+		color:#FFF;
+		background-color:#6ADCFA;
 		border-top-left-radius:3px;
 		border-bottom-left-radius:3px;
+		transition: 0.3s;
+		span {
+			min-width: 80px;
+			text-align: center;
+			display:block;
+			background:rgba(0, 0, 0, 0.1);
+			padding:0 20px;
+			height:35px;
+			line-height:35px;
+			border-top-left-radius:3px;
+			border-bottom-left-radius:3px;
+		}
+	}
+	.skillbar-bar {
+		height:35px;
+		width:0px;
+		background:#6ADCFA;
+		border-radius:3px;
+	}
+	.skill-bar-percent {
+		position:absolute;
+		right:10px;
+		top:0;
+		font-size:11px;
+		height:35px;
+		line-height:35px;
+		color:#444;
+		color:rgba(0, 0, 0, 0.4);
+		transition: 0.3s;
 	}
 }
 
-.skillbar-bar {
-	height:35px;
-	width:0px;
-	background:#6ADCFA;
-	border-radius:3px;
-}
-
-.skill-bar-percent {
-	position:absolute;
-	right:10px;
-	top:0;
-	font-size:11px;
-	height:35px;
-	line-height:35px;
-	color:#444;
-	color:rgba(0, 0, 0, 0.4);
-	transition: 0.2s;
-}
-
-.dev-tools {
-	font-size: 48px;
-	text-align: center;
-	transition: 0.3s;
-	p {
-		font-size: 20px;
+.container-tools {
+	h1 {
+		color: #566873;
+		margin-bottom: 25px;
+		font-size: 22px;
 	}
-	.col {
-		&:hover, &:focus {
-			i {
+	.dev-tools {
+		text-align: center;
+		transition: 0.3s;
+		p {
+			color: #566873;
+			font-size: 20px;
+			margin: 10px 0;
+		}
+		i {
+			font-size: 48px;
+		}
+		.col {
+			&:hover, &:focus {
+				i {
+					// Effect here
+				}
 			}
-
 		}
 	}
 }
+
