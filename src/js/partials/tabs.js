@@ -80,7 +80,7 @@
 		$(".tabs-content").css("border-top", "2px solid #47A3DA");
 		$("body").css("overflow-y", "hidden");
 		if($( window ).width() <= 1024) {
-			$(".tabs").css("margin-top", "-52px");
+			$(".tabs").css("margin-top", "-50px");
 		}
 		setTimeout(removeClass, 500);
 	});
