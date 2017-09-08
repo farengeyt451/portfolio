@@ -93,9 +93,10 @@
 		}
 	}
 	.tabs-content {
-		background-color: #FFF;
+		background-color: rgba(255, 255, 255, 1);
 		margin-top: -5px;
 		border-top: 2px solid #47A3DA;
+		padding: 60px;
 	}
 	.content {
 		max-width: 1230px;
@@ -114,6 +115,9 @@
 				clear: both;
 			}
 		}
+		h1 {
+			font-weight: normal;
+		}
 		.content-current {
 			display: block;
 		}
@@ -130,6 +134,12 @@
 	border-radius:3px;
 	transition:0.4s linear;
 	transition-property:width, background-color;
+	&:hover, &:focus {
+		.skill-bar-percent {
+			color: #000;
+			font-size: 12px;
+		}
+	}
 }
 
 .skillbar-title {
@@ -142,16 +152,17 @@
 	background:#6ADCFA;
 	border-top-left-radius:3px;
 	border-bottom-left-radius:3px;
-}
-
-.skillbar-title span {
-	display:block;
-	background:rgba(0, 0, 0, 0.1);
-	padding:0 20px;
-	height:35px;
-	line-height:35px;
-	border-top-left-radius:3px;
-	border-bottom-left-radius:3px;
+	span {
+		min-width: 80px;
+		text-align: center;
+		display:block;
+		background:rgba(0, 0, 0, 0.1);
+		padding:0 20px;
+		height:35px;
+		line-height:35px;
+		border-top-left-radius:3px;
+		border-bottom-left-radius:3px;
+	}
 }
 
 .skillbar-bar {
@@ -170,6 +181,21 @@
 	line-height:35px;
 	color:#444;
 	color:rgba(0, 0, 0, 0.4);
+	transition: 0.2s;
 }
 
+.dev-tools {
+	font-size: 48px;
+	text-align: center;
+	transition: 0.3s;
+	p {
+		font-size: 20px;
+	}
+	.col {
+		&:hover, &:focus {
+			i {
+			}
 
+		}
+	}
+}
