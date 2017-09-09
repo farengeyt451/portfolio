@@ -2,7 +2,7 @@ $("#tab2").on("click", function () {
 	setTimeout(animateSkills, 100);
 });
 
-$(".container-software").on("mouseover", function() {
+$(".container-software").on("mouseover touchstart", function() {
 	animateSoftware();
 });
 
