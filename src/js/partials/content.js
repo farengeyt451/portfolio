@@ -1,5 +1,5 @@
-$("#tab2").on("click", function () {
-	setTimeout(animateSkills, 100);
+$(".container-skills").on("mouseover touchstart", function () {
+	animateSkills();
 });
 
 $(".container-software").on("mouseover touchstart", function() {

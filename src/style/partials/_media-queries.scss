@@ -32,10 +32,10 @@
 	.header {
 		.name-info {
 			span {
-				font-size: 22px;
+				font-size: 24px;
 			}
 			p {
-				font-size: 16px;
+				font-size: 18px;
 				letter-spacing: 1.3px;
 			}
 		}
@@ -102,18 +102,18 @@
 	}
 }
 
-@media screen and (max-width: 425px) {
+@media screen and (max-width: 480px) {
 	.header {
 		.name-info {
 			padding: 10px 20px;
 			span {
 				white-space: normal;
-				font-size: 18px;
+				font-size: 20px;
 				padding-bottom: 5px;
 			}
 			p {
-				font-size: 13px;
-				letter-spacing: 1px;
+				font-size: 14px;
+				letter-spacing: 1.5px;
 				white-space: normal;
 				animation: none;
 				visibility: visible;

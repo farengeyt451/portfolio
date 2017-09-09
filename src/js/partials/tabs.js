@@ -54,8 +54,6 @@
 
 })(window);
 
-
-
 $(document).ready(function() {
 	removeClass();
 	showTabs();
@@ -64,26 +62,13 @@ $(document).ready(function() {
 $("#tab1, #tab2, #tab3").on("click", function () {
 	moveTabsTop();
 	showArrow();
-	$(".name-info").css("opacity", "0");
-	$(".tabs-content").css("border-top", "2px solid transparent");
-
-	$("body").css("overflow-y", "scroll");
-	$("body").css("overflow-x", "hidden");
-	// if(/Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent)) {
-	// 	$(".tabs").css("top", "0");
-	// 	// $(".tabs").css("margin-top", "30px");
-	// }
+	hideNameInfo();
 });
 
 $("#arrow-down").on("click", function () {
 	moveTabsDown();
-	$(".icon-angle-down").css("opacity", "0");
-	$(".name-info").css("opacity", "1");
-	$(".tabs-content").css("border-top", "2px solid #47A3DA");
-	$("body").css("overflow-y", "hidden");
-	if($( window ).width() <= 1024) {
-		$(".tabs").css("margin-top", "-50px");
-	}
+	hideArrow();
+	showNameInfo();
 	setTimeout(removeClass, 500);
 });
 
@@ -93,22 +78,40 @@ function removeClass() {
 
 function showTabs() {
 	$(".tabs").css("margin-top", "-62px");
-	if(/Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent)) {
+	if($(window).width() <= 1024) {
 		$(".tabs").css("margin-top", "-50px");
 	}
 }
 
 function moveTabsTop() {
+	$("body").css("overflow-y", "scroll");
+	$("body").css("overflow-x", "hidden");
 	$(".tabs").css("top", "0");
 	$(".tabs").css("margin-top", "0");
+	$(".tabs-content").css("border-top", "2px solid transparent");
 }
 
 function moveTabsDown() {
+	$("body").css("overflow-y", "hidden");
 	$(".tabs").css("top", "100%");
+	$(".tabs-content").css("border-top", "2px solid #47A3DA");
 	setTimeout(showTabs, 500);
 }
 
 function showArrow() {
 	$(".icon-angle-down").css("top", "0");
 	$(".icon-angle-down").css("opacity", "1");
+}
+
+function hideArrow() {
+	$(".icon-angle-down").css("opacity", "0");
+	$(".icon-angle-down").css("top", "-100px");
+}
+
+function showNameInfo() {
+	$(".name-info").css("opacity", "1");
+}
+
+function hideNameInfo() {
+	$(".name-info").css("opacity", "0");
 }
