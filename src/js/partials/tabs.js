@@ -52,37 +52,63 @@
 
 	window.CBPFWTabs = CBPFWTabs;
 
-	function removeClass() {
-		$("ul li").removeClass("tab-current");
-	}
-
-	$(document).ready(function() {
-		removeClass();
-	});
-
-	$("#tab1, #tab2, #tab3").on("click", function () {
-		$(".tabs").css("margin-top", "-100vh");
-		$("#show-header").css("opacity", "1");
-		$(".name-info").css("opacity", "0");
-		$(".tabs-content").css("border-top", "2px solid transparent");
-		$(".icon-angle-down").css("top", "0");
-		$("body").css("overflow-y", "scroll");
-		$("body").css("overflow-x", "hidden");
-		if(/Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent)) {
-			$(".tabs").css("margin-top", "-80vh");
-		}
-	});
-
-	$("#show-header").on("click", function () {
-		$(".tabs").css("margin-top", "-62px");
-		$("#show-header").css("opacity", "0");
-		$(".name-info").css("opacity", "1");
-		$(".tabs-content").css("border-top", "2px solid #47A3DA");
-		$("body").css("overflow-y", "hidden");
-		if($( window ).width() <= 1024) {
-			$(".tabs").css("margin-top", "-50px");
-		}
-		setTimeout(removeClass, 500);
-	});
-
 })(window);
+
+
+
+$(document).ready(function() {
+	removeClass();
+	showTabs();
+});
+
+$("#tab1, #tab2, #tab3").on("click", function () {
+	moveTabsTop();
+	showArrow();
+	$(".name-info").css("opacity", "0");
+	$(".tabs-content").css("border-top", "2px solid transparent");
+
+	$("body").css("overflow-y", "scroll");
+	$("body").css("overflow-x", "hidden");
+	// if(/Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent)) {
+	// 	$(".tabs").css("top", "0");
+	// 	// $(".tabs").css("margin-top", "30px");
+	// }
+});
+
+$("#arrow-down").on("click", function () {
+	moveTabsDown();
+	$(".icon-angle-down").css("opacity", "0");
+	$(".name-info").css("opacity", "1");
+	$(".tabs-content").css("border-top", "2px solid #47A3DA");
+	$("body").css("overflow-y", "hidden");
+	if($( window ).width() <= 1024) {
+		$(".tabs").css("margin-top", "-50px");
+	}
+	setTimeout(removeClass, 500);
+});
+
+function removeClass() {
+	$("ul li").removeClass("tab-current");
+}
+
+function showTabs() {
+	$(".tabs").css("margin-top", "-62px");
+	if(/Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent)) {
+		$(".tabs").css("margin-top", "-50px");
+	}
+}
+
+function moveTabsTop() {
+	$(".tabs").css("top", "0");
+	$(".tabs").css("margin-top", "0");
+}
+
+function moveTabsDown() {
+	$(".tabs").css("top", "100%");
+	setTimeout(showTabs, 500);
+}
+
+function showArrow() {
+	$(".icon-angle-down").css("top", "0");
+	$(".icon-angle-down").css("opacity", "1");
+}
