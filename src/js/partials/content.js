@@ -1,5 +1,13 @@
+$("#tab2").on("click", function () {
+	animateSkills();
+});
+
 $(".container-skills").on("mouseover touchstart", function () {
 	animateSkills();
+});
+
+$(".container-skills").one("mouseover touchstart", function () {
+	animateTechniques();
 });
 
 $(".container-software").on("mouseover touchstart", function() {
@@ -10,9 +18,32 @@ function animateSkills() {
 	$(".skillbar").each(function(){
 		$(this).find(".skillbar-bar").animate({
 			width:$(this).attr("data-percent")
-		},3000);
+		}, 3000);
 	});
 }
+
+function animateTechniques() {
+	$(".count-responsive").prop("Counter", 0).animate({
+			Counter: 67
+	}, {
+			duration: 4000,
+			easing: "swing",
+			step: function (now) {
+			$(".count-responsive").text(Math.ceil(now));
+			}
+	});
+	$(".count-grid").prop("Counter", 0).animate({
+			Counter: 58
+	}, {
+			duration: 4000,
+			easing: "swing",
+			step: function (now) {
+			$(".count-grid").text(Math.ceil(now));
+			}
+	});
+}
+
+
 
 function animateSoftware() {
 	return $(".skill-box .skills-circle li").each(function(i) {
@@ -46,7 +77,7 @@ function animateSoftware() {
 					run_duration -= 3000;
 					_left.css({
 						"clip": "rect(0, 150px, 150px, 75px)",
-						"background": "#B0DAB9"
+						"background-color": "#8EBD4C"
 					});
 					return _left.animate({
 						circle_rotate: deg

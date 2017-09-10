@@ -69,7 +69,7 @@ $("#arrow-down").on("click", function () {
 	moveTabsDown();
 	hideArrow();
 	showNameInfo();
-	setTimeout(removeClass, 500);
+	setTimeout(removeClass, 250);
 });
 
 function removeClass() {

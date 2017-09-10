@@ -20,9 +20,40 @@
 		}
 	}
 	#section-2 {
+		h1 {
+			font-size: 20px;
+		}
 		.container-skills {
 			.skillbar-title {
 				font-size: 12px;
+			}
+		}
+		.container-techniques {
+			i {
+				font-size: 70px;
+				span {
+					font-size: 50px;
+				}
+			}
+		}
+		.container-software {
+			.skill-box {
+				.skills-circle {
+					ul {
+						li {
+							width: 120px;
+							height: 120px;
+							span {
+								&.bar-circle-right {
+									clip: rect(0, 60px, 120px, 0);
+								}
+								&.bar-circle-left {
+									clip: rect(0, 60px, 120px, 0);
+								}
+							}
+						}
+					}
+				}
 			}
 		}
 	}
@@ -42,6 +73,7 @@
 	}
 	#section-2 {
 		.container-skills {
+			margin-bottom: 30px;
 			.skillbar {
 				height: 20px;
 				margin-bottom: 10px;
@@ -52,9 +84,10 @@
 				}
 			}
 			.skillbar-title {
+				background-color: transparent;
 				font-size: 12px;
 				span {
-					min-width: 50px;
+					min-width: 0px;
 					padding: 0 10px;
 					height: 20px;
 					line-height: 20px;
@@ -66,6 +99,11 @@
 			.skill-bar-percent {
 				height: 20px;
 				line-height: 20px;
+			}
+		}
+		.container-tools {
+			.col {
+				min-width: 110px;
 			}
 		}
 	}
@@ -87,16 +125,18 @@
 	}
 	#section-2 {
 		.container-skills {
+			.skillbar {
+				&:hover, &:focus {
+					.skillbar-title {
+						background-color: transparent;
+					}
+				}
+			}
 			.skillbar-title {
 				span {
 					background-color: transparent;
 					text-align: left;
 				}
-			}
-		}
-		.container-tools {
-			.col {
-				min-width: 100px;
 			}
 		}
 	}
@@ -122,9 +162,17 @@
 		}
 	}
 	#section-2 {
+		h1 {
+			font-size: 18px;
+		}
+	}
+}
+
+@media screen and (max-width: 320px) {
+	#section-2 {
 		.container-tools {
 			.col {
-				min-width: 80px;
+				min-width: 40px;
 			}
 		}
 	}
