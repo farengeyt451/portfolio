@@ -205,6 +205,17 @@
 				}
 			}
 		}
+		.container-software {
+			.skill-box {
+				.skills-circle {
+					ul {
+						li {
+								margin: 15px 15px;
+						}
+					}
+				}
+			}
+		}
 	}
 }
 
@@ -236,7 +247,7 @@
 				.skills-circle {
 					ul {
 						li {
-								margin: 5px;
+								margin: 15px 5px;
 						}
 					}
 				}

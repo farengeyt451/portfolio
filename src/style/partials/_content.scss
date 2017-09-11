@@ -142,7 +142,7 @@
 		margin-bottom: 30px;
 		transition: all 0.2s ease-in-out;
 		p {
-			border: 2px solid rgba(71, 163, 218, 0.7);
+			border: 2px solid transparent;
 			padding: 10px;
 			color: #FFF;
 			background-color: rgba(71, 163, 218, 0.7);
@@ -240,6 +240,9 @@
 				width: 95px;
 				font-size: 60px;
 			}
+		}
+		.icon-pixel-perfect {
+			font-size: 90px;
 		}
 	}
 
