@@ -151,6 +151,7 @@
 			letter-spacing: 0.5px;
 			transition: all 0.2s ease-in-out;
 			&:hover, &:focus {
+				border: 2px solid rgba(71, 163, 218, 1);
 				cursor: default;
 				color: #566873;
 				background-color: #FFF;
