@@ -25,7 +25,6 @@
 				position: relative;
 				float: left;
 				border: 2px solid #BECBD2;
-				border-bottom: none;
 				margin: 0 4px;
 				transition: 0.5s;
 			}
@@ -167,7 +166,6 @@
 			position: absolute;
 			top: 0;
 			left: 0;
-			// font-weight: bold;
 			font-size: 14px;
 			color: #FFF;
 			transition: all 0.3s ease-out;
@@ -184,7 +182,6 @@
 		.skillbar-bar {
 			height: 35px;
 			width: 0px;
-			// background-color: #6ADCFA;
 			background-color: rgba(71, 163, 218, 0.7);
 		}
 		.skill-bar-percent {
@@ -347,8 +344,6 @@
 		}
 		span {
 			vertical-align: top;
-			// display: inline-block;
-			// height: 60px;
 			line-height: 60px;
 			color: #566873;
 			font-size: 40px;
