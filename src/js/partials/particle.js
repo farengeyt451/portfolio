@@ -65,7 +65,7 @@
 			density: 12500, // the lower the denser
 			netLineDistance: 150,
 			netLineColor: "#921048",
-			particleColors: ["#AAA"] // ["#6D4E5C", "#aaa", "#FFC458" ]
+			particleColors: ["#A7B2B8"] // ["#6D4E5C", "#aaa", "#FFC458" ]
 		};
 		this.canvas = parent.canvas;
 		this.ctx = parent.ctx;
