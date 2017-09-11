@@ -88,13 +88,11 @@ function moveTabsTop() {
 	$("body").css("overflow-x", "hidden");
 	$(".tabs").css("top", "0");
 	$(".tabs").css("margin-top", "0");
-	$(".tabs-content").css("border-top", "2px solid transparent");
 }
 
 function moveTabsDown() {
 	$("body").css("overflow-y", "hidden");
 	$(".tabs").css("top", "100%");
-	$(".tabs-content").css("border-top", "2px solid #47A3DA");
 	setTimeout(showTabs, 500);
 }
 

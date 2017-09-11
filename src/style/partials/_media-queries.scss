@@ -71,6 +71,55 @@
 			}
 		}
 	}
+	.tabs {
+		nav {
+			.tab-current {
+				box-sizing: border-box;
+				box-shadow: none;
+				border: none;
+				&:before {
+					content: "";
+					position: absolute;
+					height: 2px;
+					right: 100%;
+					bottom: -1px;
+					width: 100vw;
+					background-color: #47A3DA;
+				}
+				&:after {
+					content: "";
+					position: absolute;
+					height: 2px;
+					right: 100%;
+					bottom: -1px;
+					background: #47A3DA;
+					right: auto;
+					left: 100%;
+					width: 100vw;
+				}
+			}
+			ul {
+				width: 100%;
+				padding: 0;
+				li {
+					box-sizing: border-box;
+					width: 33%;
+					margin: 0 0 0 -1px;
+					border: none;
+					&:first-child {
+					}
+					&:last-child {
+						width: calc(34% + 3px);
+					}
+					a {
+						font-size: 28px;
+						width: 100%;
+						padding: 0;
+					}
+				}
+			}
+		}
+	}
 	#section-2 {
 		.container-skills {
 			margin-bottom: 30px;
@@ -207,4 +256,8 @@
 			padding: 2px 20px;
 		}
 	}
+}
+
+@media screen and (max-width: 768px) {
+
 }
