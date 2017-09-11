@@ -3,14 +3,9 @@
 //-------
 
 .header {
-	.row {
-		margin: 0;
-	}
-	.col {
-		padding: 0;
-	}
+	height: 100vh;
 	.particle-network-animation {
-		height: 100vh;
+		height: 100%;
 		transition: 0.5s;
 		canvas {
 			width: 100%;
