@@ -6,7 +6,7 @@ $(".container-skills").on("mouseover touchstart", function () {
 	animateSkills();
 });
 
-$(".container-skills").one("mouseover touchstart", function () {
+$(".container-techniques").one("mouseover touchstart", function () {
 	animateTechniques();
 });
 

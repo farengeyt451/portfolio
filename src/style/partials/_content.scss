@@ -138,6 +138,25 @@
 //-----------
 
 #section-2 {
+	.container-about-me {
+		margin-bottom: 30px;
+		transition: all 0.2s ease-in-out;
+		p {
+			border: 2px solid rgba(71, 163, 218, 0.7);
+			padding: 10px;
+			color: #FFF;
+			background-color: rgba(71, 163, 218, 0.7);
+			font-size: 20px;
+			line-height: 30px;
+			letter-spacing: 0.5px;
+			transition: all 0.2s ease-in-out;
+			&:hover, &:focus {
+				cursor: default;
+				color: #566873;
+				background-color: #FFF;
+			}
+		}
+	}
 
 	.container-skills {
 		margin-bottom: 60px;
@@ -199,7 +218,7 @@
 
 	.container-techniques {
 		display: flex;
-		flex-diretion: row;
+		flex-direction: row;
 		flex-wrap: wrap;
 		justify-content: space-around;
 		text-align: center;
@@ -212,7 +231,7 @@
 		}
 		i {
 			text-align: center;
-			color: rgba(71, 163, 218, 1.0);
+			color: #2B6284;
 			font-size: 80px;
 			span {
 				color: rgba(71, 163, 218, 0.7);
@@ -225,7 +244,7 @@
 
 	.container-tools {
 		display: flex;
-		flex-diretion: row;
+		flex-direction: row;
 		flex-wrap: wrap;
 		justify-content: space-around;
 		text-align: center;
