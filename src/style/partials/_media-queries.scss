@@ -126,6 +126,21 @@
 			}
 		}
 	}
+	#section-1 {
+		.container {
+			.row {
+			}
+			.col {
+				min-width: 370px;
+			}
+			.blink {
+				margin-right: 0;
+			}
+			.style {
+				margin-right: 0;
+			}
+		}
+	}
 	#section-2 {
 		.container-skills {
 			margin-bottom: 30px;
@@ -246,6 +261,21 @@
 			}
 		}
 	}
+	#section-1 {
+		.container {
+			.row {
+			}
+			.col {
+				min-width: 240px;
+			}
+			.blink {
+				margin-right: 0;
+			}
+			.style {
+				margin-right: 0;
+			}
+		}
+	}
 	#section-2 {
 		h1 {
 			font-size: 18px;
@@ -265,6 +295,15 @@
 }
 
 @media screen and (max-width: 320px) {
+	#section-1 {
+		.container {
+			.row {
+			}
+			.col {
+				min-width: 150px;
+			}
+		}
+	}
 	#section-2 {
 		.container-tools {
 			.col {

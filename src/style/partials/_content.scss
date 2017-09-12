@@ -119,14 +119,6 @@
 				clear: both;
 			}
 		}
-		h1 {
-			display: block;
-			font-size: 22px;
-			color: #566873;
-			font-weight: normal;
-			margin-bottom: 25px;
-			margin-top: 0;
-		}
 		.content-current {
 			display: block;
 		}
@@ -135,6 +127,12 @@
 				text-align: center;
 				display: none;
 			}
+		}
+		h1 {
+			font-size: 22px;
+			color: #566873;
+			font-weight: normal;
+			margin: 0 0 25px 0;
 		}
 	}
 }
@@ -155,21 +153,41 @@
 			overflow: hidden;
 			position: relative;
 			flex: 1 1 auto;
-			min-height: 200px;
+			min-height: 250px;
 			min-width: 355px;
 			position: relative;
-			// border: 2px solid #8EBD4C;
-			h2 {
-				display: block;
+			border-top: 2px solid #8EBD4C;
+			h1 {
 				color: #8EBE4C;
 				font-weight: normal;
 				font-size: 60px;
-				margin: 0;
+				margin: 0 0 0 -1px;
 				padding: 0;
 			}
 			p {
 				color: #566873;
 				font-size: 16px;
+			}
+			button {
+				cursor: pointer;
+				border: none;
+				padding: 10px 0;
+				font-size: 14px;
+				letter-spacing: 2px;
+				text-transform: uppercase;
+				background-color: #8EBD4C;
+				color: #FFF;
+				position: absolute;
+				bottom: 0;
+				width: 100%;
+				outline: none;
+				&:hover, &:focus {
+					// border-top: 1px solid #FFF;
+				}
+				&:active {
+					// color: red;
+					bottom: -1px;
+				}
 			}
 		}
 		.slide {
@@ -200,6 +218,10 @@
 			}
 		}
 		.photo-container {
+			display: flex;
+			flex-wrap: wrap;
+			flex-direction: column;
+			justify-content: center;
 			background: transparent 50% 50% / cover;
 			position: absolute;
 			top: 0; right: 0; bottom: 0; left: 0;
@@ -217,34 +239,15 @@
 		}
 		.blink {
 			margin-right: 30px;
-			button {
-				cursor: pointer;
-				border: none;
-				// border-left: none;
-				// border-right: none;
-				// border-bottom: none;
-				// border: 2px solid #FFF;
-				padding: 10px 0;
-				font-size: 14px;
-				letter-spacing: 2px;
-				text-transform: uppercase;
-				background-color: #8EBD4C;
-				color: #FFF;
-				position: absolute;
-				bottom: 0;
-				width: 100%;
-				outline: none;
-				&:hover, &:focus {
-					border-top: 1px solid #FFF;
-				}
-				&:active {
-					// color: red;
-					bottom: -1px;
-				}
-			}
-
 		}
-		.work-button {
+		.denteez {
+		}
+		.business {
+		}
+		.style {
+			margin-right: 30px;
+		}
+		.coffee-shop {
 		}
 	}
 }
@@ -462,31 +465,6 @@
 					}
 				}
 			}
-		}
-	}
-
-	.container-linux {
-		text-align: center;
-		.icon-linux:before {
-			color: #7E7E7E;
-		}
-		.icon-terminal-2:before {
-			color: #1D5679;
-		}
-		.icon-coffee:before {
-			color: #8D4811;
-		}
-		.icon-heart-1:before {
-			color: #CC0001;
-		}
-		i {
-			font-size: 60px;
-		}
-		span {
-			vertical-align: top;
-			line-height: 60px;
-			color: #566873;
-			font-size: 40px;
 		}
 	}
 }
