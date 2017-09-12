@@ -148,20 +148,28 @@
 		margin: 0 auto;
 		.row {
 			display: flex;
+			flex-wrap: wrap;
 		}
 		.col {
+			margin-bottom: 30px;
 			overflow: hidden;
 			position: relative;
 			flex: 1 1 auto;
-			min-height: 260px;
+			min-height: 200px;
+			min-width: 355px;
 			position: relative;
-			border: 2px solid #EEE;
+			// border: 2px solid #8EBD4C;
 			h2 {
-				color: grey;
+				display: block;
+				color: #8EBE4C;
 				font-weight: normal;
 				font-size: 60px;
 				margin: 0;
-				z-index: 0;
+				padding: 0;
+			}
+			p {
+				color: #566873;
+				font-size: 16px;
 			}
 		}
 		.slide {
@@ -192,7 +200,7 @@
 			}
 		}
 		.photo-container {
-			background: #FFF 50% 50% / cover;
+			background: transparent 50% 50% / cover;
 			position: absolute;
 			top: 0; right: 0; bottom: 0; left: 0;
 			transition: 1s;
@@ -208,10 +216,35 @@
 			}
 		}
 		.blink {
-			margin: 0 15px 15px 0;
+			margin-right: 30px;
+			button {
+				cursor: pointer;
+				border: none;
+				// border-left: none;
+				// border-right: none;
+				// border-bottom: none;
+				// border: 2px solid #FFF;
+				padding: 10px 0;
+				font-size: 14px;
+				letter-spacing: 2px;
+				text-transform: uppercase;
+				background-color: #8EBD4C;
+				color: #FFF;
+				position: absolute;
+				bottom: 0;
+				width: 100%;
+				outline: none;
+				&:hover, &:focus {
+					border-top: 1px solid #FFF;
+				}
+				&:active {
+					// color: red;
+					bottom: -1px;
+				}
+			}
+
 		}
 		.work-button {
-			margin: 0 0 15px 15px;
 		}
 	}
 }
