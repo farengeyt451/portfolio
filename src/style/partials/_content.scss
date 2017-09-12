@@ -130,6 +130,12 @@
 		.content-current {
 			display: block;
 		}
+		.for-mobile {
+			h1 {
+				text-align: center;
+				display: none;
+			}
+		}
 	}
 }
 

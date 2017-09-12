@@ -189,6 +189,14 @@
 			}
 		}
 	}
+	#section-1, #section-2, #section-3 {
+		.for-mobile {
+			h1 {
+				display: block;
+				font-size: 22px;
+			}
+		}
+	}
 	#section-2 {
 		.container-skills {
 			.skillbar {
