@@ -332,6 +332,7 @@
 				}
 			}
 		}
+
 		.style {
 			margin-right: 30px;
 			&:hover, &:focus {
@@ -353,6 +354,10 @@
 					border: 2px solid #8EBD4C;
 				}
 			}
+		}
+
+		.mg-bottom {
+			margin-bottom: 60px;
 		}
 	}
 }
