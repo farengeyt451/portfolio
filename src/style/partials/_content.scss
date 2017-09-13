@@ -182,16 +182,18 @@
 				bottom: 0;
 				width: 100%;
 				outline: none;
-				&:hover, &:focus {
-					// border-top: 1px solid #FFF;
-				}
+				height: 40px;
+				transition: all 0.2s ease;
 				&:active {
-					// color: red;
 					bottom: -1px;
 				}
 			}
 		}
 		.slide {
+			display: flex;
+			flex-wrap: wrap;
+			justify-content: center;
+			align-items: center;
 			background: rgba(#8EBE4C, 1);
 			padding: 0 15px;
 			position: absolute;
@@ -201,6 +203,35 @@
 			visibility: hidden;
 			will-change: transform;
 			transform: translateY(100%);
+			p {
+				align-self: flex-start;
+				margin: 10px 0;
+			}
+			.text-tags {
+				padding-bottom: 60px;
+				display: flex;
+				flex-wrap: wrap;
+				justify-content: center;
+				align-items: flex-start;
+				.tag {
+					background: #47A3DA;
+					display: inline-block;
+					color: #FFF;
+					position: relative;
+					padding: 10px;
+					margin: 10px;
+					font-size: 14px;
+				}
+				.tag:before {
+					background: #FFF;
+					width: 9px;
+					height: 9px;
+					content: "";
+					display: inline-block;
+					border-radius: 20px;
+					margin: 0 5px 0 0;
+				}
+			}
 		}
 		.row:hover {
 			& ~ .row .slide {
@@ -240,15 +271,55 @@
 		}
 		.blink {
 			margin-right: 30px;
+			&:hover, &:focus {
+				button {
+					background-color: #FFF;
+					color: #808080;
+					height: 60px;
+					border: 2px solid #808080;
+				}
+			}
 		}
 		.denteez {
+			&:hover, &:focus {
+				button {
+					background-color: #FFF;
+					color: #808080;
+					height: 60px;
+					border: 2px solid #808080;
+				}
+			}
 		}
 		.business {
+			&:hover, &:focus {
+				button {
+					background-color: #FFF;
+					color: #808080;
+					height: 60px;
+					border: 2px solid #808080;
+				}
+			}
 		}
 		.style {
 			margin-right: 30px;
+			&:hover, &:focus {
+				button {
+					background-color: #FFF;
+					color: #808080;
+					height: 60px;
+					border: 2px solid #808080;
+				}
+			}
 		}
 		.coffee-shop {
+			&:hover, &:focus {
+				button {
+					background-color: #FFF;
+					color: #808080;
+					height: 60px;
+					border: 2px solid #808080;
+				}
+			}
 		}
 	}
 }
