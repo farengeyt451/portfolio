@@ -31,7 +31,7 @@
 		}
 		.container-skills {
 			.skillbar-title {
-				font-size: 12px;
+				// font-size: 14px;
 			}
 		}
 		.container-techniques {
@@ -128,10 +128,22 @@
 	}
 	#section-1 {
 		.container {
-			.row {
-			}
 			.col {
 				min-width: 370px;
+				h1 {
+					font-size: 50px;
+				}
+				p {
+					font-size: 16px;
+					line-height: 26px;
+				}
+			}
+			.slide {
+				.text-tags {
+					.tag {
+						margin: 5px;
+					}
+				}
 			}
 			.blink {
 				margin-right: 0;
@@ -145,30 +157,30 @@
 		.container-skills {
 			margin-bottom: 30px;
 			.skillbar {
-				height: 20px;
+				height: 25px;
 				margin-bottom: 10px;
 				&:hover, &:focus {
 					.skill-bar-percent {
-						font-size: 12px;
+						font-size: 14px;
 					}
 				}
 			}
 			.skillbar-title {
 				background-color: transparent;
-				font-size: 12px;
+				font-size: 14px;
 				span {
 					min-width: 0px;
 					padding: 0 10px;
-					height: 20px;
-					line-height: 20px;
+					height: 25px;
+					line-height: 25px;
 				}
 			}
 			.skillbar-bar {
-				height: 20px;
+				height: 25px;
 			}
 			.skill-bar-percent {
-				height: 20px;
-				line-height: 20px;
+				height: 25px;
+				line-height: 25px;
 			}
 		}
 		.container-tools {
@@ -286,6 +298,31 @@
 					ul {
 						li {
 								margin: 15px 5px;
+						}
+					}
+				}
+			}
+		}
+	}
+}
+
+@media screen and (max-width: 460px) {
+	#section-1 {
+		.container {
+			.row {
+				.col {
+					p {
+						font-size: 14px;
+					}
+					h1 {
+						font-size: 40px;
+					}
+				}
+				.slide {
+					.text-tags {
+						.tag {
+							font-size: 12px;
+							padding: 5px;
 						}
 					}
 				}
