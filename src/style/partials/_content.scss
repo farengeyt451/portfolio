@@ -595,3 +595,156 @@
 		}
 	}
 }
+
+//---------------------
+//-#Section-3 | Contact
+//---------------------
+
+#section-3 {
+	.container-social {
+		// background-color: #EEE;
+		display: flex;
+		// flex-direction: column;
+		justify-content: space-around;
+		align-items: flex-start;
+		margin-bottom: 100px;
+	}
+
+	.container-mail, .container-responsive, .container-skype, .container-google-plus {
+		// border: 2px solid #999;
+		// background-color: #F88F89;
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+		align-items: center;
+		margin-bottom: 15px;
+	}
+
+	.icon-button {
+		background-color: #FFF;
+		border-radius: 50%;
+		cursor: pointer;
+		display: inline-block;
+		font-size: 64px;
+		height: 116px;
+		line-height: 116px;
+		margin: 0 5px;
+		position: relative;
+		text-align: center;
+		user-select: none;
+		width: 116px;
+		span {
+			border-radius: 0;
+			display: block;
+			height: 0;
+			left: 50%;
+			margin: 0;
+			position: absolute;
+			top: 50%;
+			transition: all 0.3s;
+			width: 0;
+		}
+		i {
+			background: none;
+			color: #FFF;
+			height: 116px;
+			left: 0;
+			line-height: 116px;
+			position: absolute;
+			top: 0;
+			transition: all 0.3s;
+			width: 116px;
+			z-index: 10;
+		}
+
+		.icon-mail {
+			color: #FF735A;
+		}
+
+		.icon-responsive {
+			color: #17A664;
+		}
+
+		.icon-skype {
+			color: #00AFF0;
+		}
+
+		.icon-google-plus {
+			color: #E05A3C;
+		}
+		&:hover, &:focus {
+			span {
+				width: 116px;
+				height: 116px;
+				border-radius: 116px;
+				margin: -58px;
+			}
+
+			.icon-mail {
+				color: #FFF;
+			}
+
+			.icon-responsive {
+				color: #FFF;
+			}
+
+			.icon-skype {
+				color: #FFF;
+			}
+
+			.icon-google-plus {
+				color: #FFF;
+			}
+		}
+	}
+.container-copy {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	.text {
+		font-size: 16px;
+		color: #566873;
+	}
+	.icon-code {
+		font-size: 22px;
+		letter-spacing: 2px;
+	}
+	button {
+		cursor: pointer;
+		border: none;
+		margin-left: 10px;
+		outline: none;
+		transition: all 0.2s ease;
+		&:hover, &:focus {
+
+		}
+		&:active {
+			bottom: -1px;
+		}
+	}
+}
+	.mail {
+		span {
+			background-color: #FF735A;
+		}
+	}
+
+	.responsive {
+		span {
+			background-color: #17A664;
+		}
+	}
+
+	.skype {
+		span {
+			background-color: #00AFF0;
+		}
+	}
+
+	.google-plus {
+		span {
+			background-color: #E05A3C;
+		}
+	}
+}
+
