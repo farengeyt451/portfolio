@@ -1,6 +1,22 @@
 //--------------
 //-Media queries
 //--------------
+@media screen and (max-width: 480px) {
+	#section-3 {
+		.container-mail, .container-responsive, .container-skype, .container-google-plus {
+		width: 100%;
+		margin-right: 0;
+		}
+		.container-copy {
+			flex-direction: column;
+			button {
+				width: 100px;
+				margin-top: 15px;
+			}
+		}
+	}
+}
+
 
 @media screen and (max-width: 1024px) {
 	.header {
