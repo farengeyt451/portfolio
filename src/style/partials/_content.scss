@@ -208,6 +208,8 @@
 			justify-content: center;
 			align-items: center;
 			background-color: #FFF;
+			border-left: 2px solid #8EBD4C;
+			border-right: 2px solid #8EBD4C;
 			padding: 0 15px;
 			position: absolute;
 			top: 0; right: 0; bottom: 0; left: 0;
@@ -357,7 +359,7 @@
 		}
 
 		.mg-bottom {
-			margin-bottom: 60px;
+			margin-bottom: 100px;
 		}
 	}
 }
@@ -534,7 +536,7 @@
 			.skills-circle {
 				ul {
 					padding: 0;
-					margin: 15px 0 60px 0;
+					margin: 15px 0 100px 0;
 					text-align: center;
 					list-style-type: none;
 					li {
