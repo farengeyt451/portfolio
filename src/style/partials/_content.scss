@@ -9,12 +9,13 @@
 .tabs {
 	background: linear-gradient(to bottom, rgba(255,255,255,0.6) 0%,rgba(255,255,255,1) 30%);
 	position: absolute;
-	top: 100%;
+	top: 100vh;
+	bottom: 0;
 	width: 100vw;
-	min-height: 100vh;
+	// min-height: 100vh;
 	transition: all 0.5s ease;
 	margin-top: 0;
-	overflow-x: hidden;
+	overflow: hidden;
 	nav {
 		text-align: center;
 		ul {
