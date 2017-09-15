@@ -77,24 +77,28 @@ function removeClass() {
 }
 
 function showTabs() {
-	$(".tabs").css("margin-top", "-62px");
+	$(".tabs").css("top", "calc(100% - 62px)");
 	if($(window).width() <= 1024) {
-		$(".tabs").css("margin-top", "-50px");
+		$(".tabs").css("top", "calc(100% - 62px)");
 	}
 }
 
 function moveTabsTop() {
 	$("body").css("overflow-y", "scroll");
-	$("body").css("overflow-x", "hidden");
+	// $("body").css("overflow-x", "hidden");
 	$(".tabs").css("top", "0");
 	$(".tabs").css("margin-top", "0");
-	$(".tabs").css("overflow", "visible");
+	$(".tabs").css("overflow-y", "visible");
+	// $(".tabs").css("overflow-x", "hidden");
 	$(".tabs nav ul li").css("border-bottom", "none");
 }
 
 function moveTabsDown() {
 	$("body").css("overflow-y", "hidden");
 	$(".tabs").css("top", "100%");
+	// $(".tabs").css("bottom", "calc(0 + 120px)");
+	$(".tabs").css("overflow-y", "hidden");
+	// $(".tabs").css("overflow-x", "hidden");
 	setTimeout(showTabs, 500);
 }
 
