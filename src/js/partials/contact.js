@@ -26,7 +26,7 @@ function copyToClipboard(element) {
 
 function styleBtnScl(btn) {
 	$(btn).css("background-color", "#8EBD4C");
-	$(btn).text("Сopied");
+	$(btn).text("Done");
 }
 
 function styleBtnEr(btn) {
