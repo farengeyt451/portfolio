@@ -18,7 +18,7 @@
 	}
 
 	CBPFWTabs.prototype.options = {
-		start : 0
+		start : 1
 	};
 
 	CBPFWTabs.prototype._init = function() {
