@@ -1,21 +1,23 @@
 //--------------
 //-Media queries
 //--------------
-@media screen and (max-width: 480px) {
-	#section-3 {
-		.container-mail, .container-responsive, .container-skype, .container-google-plus {
-		width: 100%;
-		margin-right: 0;
-		}
-		.container-copy {
-			flex-direction: column;
-			button {
-				width: 100px;
-				margin-top: 15px;
-			}
-		}
-	}
-}
+// @media screen and (max-width: 480px) {
+// 	#section-3 {
+// 		.container-social {
+// 			.container-mail, .container-responsive, .container-skype, .container-google-plus {
+// 			width: 100%;
+// 			margin-right: 0;
+// 			}
+// 			.container-copy {
+// 				flex-direction: column;
+// 				button {
+// 					width: 100px;
+// 					margin-top: 15px;
+// 				}
+// 			}
+// 		}
+// 	}
+// }
 
 
 @media screen and (max-width: 1024px) {
@@ -76,6 +78,16 @@
 						}
 					}
 				}
+			}
+		}
+	}
+	#section-3 {
+		.container-social {
+			.container-mail, .container-responsive, .container-skype, .container-google-plus {
+			width: 354px;
+			margin-right: 0;
+			}
+			.container-copy {
 			}
 		}
 	}
@@ -216,6 +228,16 @@
 			}
 		}
 	}
+	#section-3 {
+		.container-social {
+			.container-mail, .container-responsive, .container-skype, .container-google-plus {
+			width: 250px;
+			margin-right: 0;
+			}
+			.container-copy {
+			}
+		}
+	}
 }
 
 
@@ -298,6 +320,19 @@
 			}
 			.blink {
 				margin-right: 0;
+				h1 {
+					margin-left: -2px;
+				}
+			}
+			.denteez {
+				h1 {
+					margin-left: -2px;
+				}
+			}
+			.business {
+				h1 {
+					margin-left: -2px;
+				}
 			}
 			.style {
 				margin-right: 0;
@@ -361,6 +396,15 @@
 		.container-tools {
 			.col {
 				min-width: 40px;
+			}
+		}
+	}
+	#section-3 {
+		.container-social {
+			.container-copy {
+				.text {
+					font-size: 14px;
+				}
 			}
 		}
 	}
