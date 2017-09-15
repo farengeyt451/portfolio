@@ -47,8 +47,6 @@ function animateTechniques() {
 	});
 }
 
-
-
 function animateSoftware() {
 	return $(".skill-box .skills-circle li").each(function(i) {
 		var _left, _percent, _right, deg, full_deg, run_duration;

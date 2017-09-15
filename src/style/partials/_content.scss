@@ -704,12 +704,14 @@
 				}
 			}
 		}
+
 	.container-copy {
 		flex-direction: column;
 		margin-top: 15px;
 		display: flex;
 		justify-content: space-between;
 		align-items: center;
+
 		.text {
 			text-align: center;
 			font-size: 16px;
@@ -730,13 +732,13 @@
 			outline: none;
 			transition: all 0.2s ease;
 			background-color: #47A3DA;
-			// border: 2px solid #999;
+			border: 2px solid transparent;
 			&:hover, &:focus {
-				box-shadow: inset 0 0 0 2px #3071A9;
+				box-shadow: inset 0 0 0 2px #FFF;
 			}
 			&:active {
-				margin-top: 31px;
-				box-shadow: inset 0 0 0 2px #3071A9;
+				transform: translateY(2px);
+				box-shadow: inset 0 0 0 2px #FFF;
 			}
 		}
 	}
