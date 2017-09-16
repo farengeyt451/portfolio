@@ -11,7 +11,7 @@
 	position: absolute;
 	top: 100%;
 	width: 100vw;
-	min-height: 100vh;
+	// min-height: 95vh;
 	transition: all 0.5s ease;
 	margin-top: 0;
 	overflow-x: hidden;
@@ -105,7 +105,7 @@
 	}
 
 	.tabs-content {
-
+		display: none;
 		padding: 60px 15px 0 15px;
 		h1 {
 			font-size: 22px;
@@ -140,8 +140,39 @@
 				h1 {
 					text-align: center;
 					display: none;
+					margin-bottom: 60px;
 				}
 			}
+		}
+	}
+
+	.icon-down {
+		width: 100px;
+		height: 60px;
+		margin: 0 auto;
+		text-align: center;
+		transform: translateY(-60px);
+		.icon-angle-down {
+			line-height: 60px;
+			color: #395442;
+			background-color: transparent;
+			font-size: 28px;
+			cursor: pointer;
+			opacity: 0;
+			// line-height: 50px;
+			transition: 0.25s;
+			animation: bounce 2s infinite;
+		}
+	}
+	@keyframes bounce {
+		0%, 20%, 50%, 80%, 100% {
+			transform: translateY(0);
+		}
+		40% {
+			transform: translateY(3px);
+		}
+		60% {
+			transform: translateY(5px);
 		}
 	}
 }
@@ -603,11 +634,12 @@
 //---------------------
 
 #section-3 {
-	// min-height: 85vh;
+	min-height: calc(95vh - 190px);
 	h1 {
 		text-align: center;
-		margin: 0 0 40px 0;
+		margin: 0 0 60px 0;
 	}
+
 	.container-social {
 		// margin-top: 10vh;
 		// background-color: #EEE;
@@ -617,7 +649,8 @@
 		justify-content: space-around;
 		align-items: center;
 		margin-bottom: 100px;
-		.container-mail, .container-responsive, .container-skype, .container-google-plus {
+
+		.container-mail, .container-phone, .container-skype, .container-google-plus {
 			// border: 2px solid #999;
 			// width: 250px;
 			// background-color: #F88F89;
@@ -671,11 +704,11 @@
 			}
 
 			.icon-mail {
-				color: #FF735A;
+				color: #7E7CFF;
 			}
 
-			.icon-responsive {
-				color: #17A664;
+			.icon-phone {
+				color: #2B979C;
 			}
 
 			.icon-skype {
@@ -697,7 +730,7 @@
 					color: #FFF;
 				}
 
-				.icon-responsive {
+				.icon-phone {
 					color: #FFF;
 				}
 
@@ -724,7 +757,7 @@
 			color: #566873;
 		}
 		button {
-			width: 150px;
+			width: 200px;
 			margin-top: 30px;
 			// border-radius: 50%;
 			color: #FFF;
@@ -750,13 +783,13 @@
 	}
 		.mail {
 			span {
-				background-color: #FF735A;
+				background-color: #7E7CFF;
 			}
 		}
 
-		.responsive {
+		.phone {
 			span {
-				background-color: #17A664;
+				background-color: #2B979C;
 			}
 		}
 

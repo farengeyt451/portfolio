@@ -53,7 +53,6 @@
 	window.CBPFWTabs = CBPFWTabs;
 
 })(window);
-
 $(document).ready(function() {
 	removeClass();
 	showTabs();
@@ -84,9 +83,10 @@ function showTabs() {
 }
 
 function moveTabsTop() {
+	$(".tabs-content").css("display", "block");
 	$("body").css("overflow-y", "scroll");
 	$("body").css("overflow-x", "hidden");
-	$(".tabs").css("top", "0");
+	$(".tabs").css("top", "5vh");
 	$(".tabs").css("margin-top", "0");
 	$(".tabs nav ul li").css("border-bottom", "none");
 }
