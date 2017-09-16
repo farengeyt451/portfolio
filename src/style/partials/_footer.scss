@@ -1,8 +1,6 @@
 .footer {
 	width: 100%;
 	text-align: center;
-	// position: absolute;
-	// bottom: 0;
 	color: #9AA5AA;
 	font-size: 14px;
 }
@@ -14,4 +12,7 @@
 		left: 0;
 		color: #9AA5AA;
 	}
+	position: absolute;
+	bottom: 0;
+	left: 0;
 }

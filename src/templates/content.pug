@@ -11,6 +11,8 @@
 				a#tab3.icon-contacts(href="#section-3")
 					span Contact
 	.tabs-content
+		.icon-down
+			.icon-angle-down#arrow-down
 		.content
 			section#section-1
 				.for-mobile
@@ -230,9 +232,9 @@
 						.container-copy
 							span#mail.text alexander-kislov@hotmail.com
 							button#mailbtn(onclick="copyToClipboard(\"#mail\")") Copy
-					.container-responsive
-						a.icon-button.responsive(href="tel:+380-95-548-7449")
-							i.icon-responsive
+					.container-phone
+						a.icon-button.phone(href="tel:+380-95-548-7449")
+							i.icon-phone
 							span
 						.container-copy
 							span#phone.text +380-95-548-7449
@@ -251,5 +253,5 @@
 						.container-copy
 							span#google-plus.text +alexandrkislov92
 							button#gplusbtn(onclick="copyToClipboard(\"#google-plus\")") Copy
-				//- .footer
-					//- p &copy; 2017 Alexander Kislov
+				.footer
+					p &copy; 2017 Alexander Kislov

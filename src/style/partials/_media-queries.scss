@@ -4,7 +4,7 @@
 // @media screen and (max-width: 480px) {
 // 	#section-3 {
 // 		.container-social {
-// 			.container-mail, .container-responsive, .container-skype, .container-google-plus {
+// 			.container-mail, .container-phone, .container-skype, .container-google-plus {
 // 			width: 100%;
 // 			margin-right: 0;
 // 			}
@@ -33,7 +33,9 @@
 		margin-top: -50px;
 		nav {
 			a {
-				font-size: 20px;
+				span {
+					font-size: 20px;
+				}
 			}
 		}
 	}
@@ -83,7 +85,7 @@
 	}
 	#section-3 {
 		.container-social {
-			.container-mail, .container-responsive, .container-skype, .container-google-plus {
+			.container-mail, .container-phone, .container-skype, .container-google-plus {
 			width: 354px;
 			margin-right: 0;
 			}
@@ -230,7 +232,7 @@
 	}
 	#section-3 {
 		.container-social {
-			.container-mail, .container-responsive, .container-skype, .container-google-plus {
+			.container-mail, .container-phone, .container-skype, .container-google-plus {
 			width: 250px;
 			margin-right: 0;
 			}
