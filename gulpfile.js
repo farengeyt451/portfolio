@@ -56,7 +56,8 @@ var path = {
 		production: "production/*"
 	},
 	copy: {
-		js: "node_modules/jquery/dist/jquery.min.js"
+		js: "node_modules/jquery/dist/jquery.min.js",
+		json: "src/manifest/*.json"
 		// css: "node_modules/bootstrap/dist/css/bootstrap.min.css"
 	}
 };
@@ -85,6 +86,8 @@ gulp.task("copy", function () {
 		.pipe(gulpIf(isDevelopment, gulp.dest(path.build.js), gulp.dest(path.production.js)))
 		// .pipe(gulp.src(path.copy.css))
 		// .pipe(gulpIf(isDevelopment, gulp.dest(path.build.css), gulp.dest(path.production.css)))
+		.pipe(gulp.src(path.copy.json))
+		.pipe(gulpIf(isDevelopment, gulp.dest(path.build.html), gulp.dest(path.production.html)))
 		.pipe(bs.stream());
 });
 
