@@ -15,10 +15,8 @@ function copyToClipboard(element) {
 					styleBtnScl("#gplusbtn");
 				}
 			}
-			// var msg = successful ? "successful" : "unsuccessful";
-			// console.log("Copying text command was " + msg);
 		} catch (err) {
-			alert("Oops, unable to copy, this problem can be i you use IE");
+			alert("Oops, unable to copy, this problem can be if you use IE");
 		} finally {
 			$temp.remove();
 		}

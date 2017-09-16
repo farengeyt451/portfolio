@@ -1,27 +1,6 @@
-//--------------
-//-Media queries
-//--------------
-// @media screen and (max-width: 480px) {
-// 	#section-3 {
-// 		.container-social {
-// 			.container-mail, .container-phone, .container-skype, .container-google-plus {
-// 			width: 100%;
-// 			margin-right: 0;
-// 			}
-// 			.container-copy {
-// 				flex-direction: column;
-// 				button {
-// 					width: 100px;
-// 					margin-top: 15px;
-// 				}
-// 			}
-// 		}
-// 	}
-// }
-
-
 @media screen and (max-width: 1024px) {
 	.header {
+
 		.name-info {
 			top: 20%;
 			left: 50%;
@@ -29,6 +8,7 @@
 			text-align: center;
 		}
 	}
+
 	.tabs {
 		margin-top: -50px;
 		nav {
@@ -39,21 +19,19 @@
 			}
 		}
 	}
+
 	#section-2 {
 		h1 {
 			font-size: 20px;
 		}
+
 		.container-about-me {
 			p {
 				font-size: 16px;
 				line-height: 26px;
 			}
 		}
-		.container-skills {
-			.skillbar-title {
-				// font-size: 14px;
-			}
-		}
+
 		.container-techniques {
 			i {
 				font-size: 70px;
@@ -62,8 +40,11 @@
 				}
 			}
 		}
+
 		.container-software {
+
 			.skill-box {
+
 				.skills-circle {
 					ul {
 						li {
@@ -83,12 +64,16 @@
 			}
 		}
 	}
+
 	#section-3 {
+
 		.container-social {
+
 			.container-mail, .container-phone, .container-skype, .container-google-plus {
 			width: 354px;
 			margin-right: 0;
 			}
+
 			.container-copy {
 			}
 		}
@@ -97,6 +82,7 @@
 
 @media screen and (max-width: 768px) {
 	.header {
+
 		.name-info {
 			span {
 				font-size: 24px;
@@ -107,8 +93,10 @@
 			}
 		}
 	}
+
 	.tabs {
 		nav {
+
 			.tab-current {
 				box-sizing: border-box;
 				box-shadow: none;
@@ -156,8 +144,11 @@
 			}
 		}
 	}
+
 	#section-1 {
+
 		.container {
+
 			.col {
 				min-width: 370px;
 				h1 {
@@ -168,24 +159,32 @@
 					line-height: 26px;
 				}
 			}
+
 			.slide {
+
 				.text-tags {
+
 					.tag {
 						margin: 5px;
 					}
 				}
 			}
+
 			.blink {
 				margin-right: 0;
 			}
+
 			.style {
 				margin-right: 0;
 			}
 		}
 	}
+
 	#section-2 {
+
 		.container-skills {
 			margin-bottom: 30px;
+
 			.skillbar {
 				height: 25px;
 				margin-bottom: 10px;
@@ -195,6 +194,7 @@
 					}
 				}
 			}
+
 			.skillbar-title {
 				background-color: transparent;
 				font-size: 14px;
@@ -205,21 +205,28 @@
 					line-height: 25px;
 				}
 			}
+
 			.skillbar-bar {
 				height: 25px;
 			}
+
 			.skill-bar-percent {
 				height: 25px;
 				line-height: 25px;
 			}
 		}
+
 		.container-tools {
+
 			.col {
 				min-width: 120px;
 			}
 		}
+
 		.container-software {
+
 			.skill-box {
+
 				.skills-circle {
 					ul {
 						li {
@@ -230,12 +237,16 @@
 			}
 		}
 	}
+
 	#section-3 {
+
 		.container-social {
+
 			.container-mail, .container-phone, .container-skype, .container-google-plus {
 			width: 250px;
 			margin-right: 0;
 			}
+
 			.container-copy {
 			}
 		}
@@ -245,6 +256,7 @@
 
 @media screen and (max-width: 580px) {
 	.tabs {
+
 		nav{
 			a {
 				span {
@@ -256,7 +268,9 @@
 			}
 		}
 	}
+
 	#section-1, #section-2, #section-3 {
+
 		.for-mobile {
 			h1 {
 				display: block;
@@ -264,8 +278,11 @@
 			}
 		}
 	}
+
 	#section-2 {
+
 		.container-skills {
+
 			.skillbar {
 				&:hover, &:focus {
 					.skillbar-title {
@@ -273,6 +290,7 @@
 					}
 				}
 			}
+
 			.skillbar-title {
 				span {
 					background-color: transparent;
@@ -280,8 +298,11 @@
 				}
 			}
 		}
+
 		.container-software {
+
 			.skill-box {
+
 				.skills-circle {
 					ul {
 						li {
@@ -296,6 +317,7 @@
 
 @media screen and (max-width: 480px) {
 	.header {
+
 		.name-info {
 			padding: 10px 20px;
 			span {
@@ -313,40 +335,49 @@
 			}
 		}
 	}
+
 	#section-1 {
+
 		.container {
-			.row {
-			}
+
 			.col {
 				min-width: 240px;
 			}
+
 			.blink {
 				margin-right: 0;
 				h1 {
 					margin-left: -2px;
 				}
 			}
+
 			.denteez {
 				h1 {
 					margin-left: -2px;
 				}
 			}
+
 			.business {
 				h1 {
 					margin-left: -2px;
 				}
 			}
+
 			.style {
 				margin-right: 0;
 			}
 		}
 	}
+
 	#section-2 {
 		h1 {
 			font-size: 18px;
 		}
+
 		.container-software {
+
 			.skill-box {
+
 				.skills-circle {
 					ul {
 						li {
@@ -361,8 +392,11 @@
 
 @media screen and (max-width: 460px) {
 	#section-1 {
+
 		.container {
+
 			.row {
+
 				.col {
 					p {
 						font-size: 14px;
@@ -371,8 +405,11 @@
 						font-size: 40px;
 					}
 				}
+
 				.slide {
+
 					.text-tags {
+
 						.tag {
 							font-size: 12px;
 							padding: 5px;
@@ -386,24 +423,31 @@
 
 @media screen and (max-width: 320px) {
 	#section-1 {
+
 		.container {
-			.row {
-			}
+
 			.col {
 				min-width: 150px;
 			}
 		}
 	}
+
 	#section-2 {
+
 		.container-tools {
+
 			.col {
 				min-width: 40px;
 			}
 		}
 	}
+
 	#section-3 {
+
 		.container-social {
+
 			.container-copy {
+
 				.text {
 					font-size: 14px;
 				}
@@ -414,6 +458,7 @@
 
 @media screen and (max-width: 530px) and (max-height: 300px) {
 	.header {
+
 		.name-info {
 			top: 5%;
 			padding: 2px 20px;
