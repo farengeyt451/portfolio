@@ -215,7 +215,7 @@
 				font-size: 16px;
 				line-height: 26px;
 			}
-			button {
+			input {
 				cursor: pointer;
 				border: none;
 				padding: 10px 0;
@@ -321,7 +321,7 @@
 				margin-left: -6px;
 			}
 			&:hover, &:focus {
-				button {
+				input {
 					background-color: #FFF;
 					color: #808080;
 					height: 60px;
@@ -335,7 +335,7 @@
 				margin-left: -6px;
 			}
 			&:hover, &:focus {
-				button {
+				input {
 					background-color: #FFF;
 					color: #808080;
 					height: 60px;
@@ -349,7 +349,7 @@
 				margin-left: -6px;
 			}
 			&:hover, &:focus {
-				button {
+				input {
 					background-color: #FFF;
 					color: #808080;
 					height: 60px;
@@ -361,7 +361,7 @@
 		.style {
 			margin-right: 30px;
 			&:hover, &:focus {
-				button {
+				input {
 					background-color: #FFF;
 					color: #808080;
 					height: 60px;
@@ -372,7 +372,7 @@
 
 		.coffee-shop {
 			&:hover, &:focus {
-				button {
+				input {
 					background-color: #FFF;
 					color: #808080;
 					height: 60px;
