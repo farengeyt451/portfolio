@@ -7,14 +7,13 @@
 //----------------
 
 .tabs {
-	background: linear-gradient(to bottom, rgba(255,255,255,0.6) 0%,rgba(255,255,255,1) 30%);
+	background: linear-gradient(to bottom, rgba(255, 255, 255, 0.6) 0%,rgba(255, 255, 255, 1.0) 30%);
 	position: absolute;
 	top: 100%;
 	width: 100vw;
 	transition: all 0.5s ease;
 	margin-top: 0;
 	overflow-x: hidden;
-
 	nav {
 		text-align: center;
 		ul {
@@ -34,12 +33,12 @@
 		}
 
 		.tab-current {
-			border: 2px solid #47A3DA;
-			box-shadow: inset 0 2px #47A3DA;
+			border: 2px solid $accent-blue;
+			box-shadow: inset 0 2px $accent-blue;
 			border-bottom: none;
 			z-index: 1;
 			a {
-				color: #47A3DA;
+				color: $accent-blue;
 			}
 			&:before {
 				content: "";
@@ -48,7 +47,7 @@
 				right: 100%;
 				bottom: -1px;
 				width: 100vw;
-				background: #47A3DA;
+				background: $accent-blue;
 			}
 			&:after {
 				content: "";
@@ -56,7 +55,7 @@
 				height: 2px;
 				right: 100%;
 				bottom: -1px;
-				background: #47A3DA;
+				background: $accent-blue;
 				right: auto;
 				left: 100%;
 				width: 100vw;
@@ -83,7 +82,7 @@
 				margin: -4px 6px 0 0;
 			}
 			&:hover, &:focus {
-				color: #47A3DA;
+				color: $accent-blue;
 				transform: translateY(-5px);
 			}
 			&:active {
@@ -109,7 +108,7 @@
 		padding: 60px 15px 0 15px;
 		h1 {
 			font-size: 22px;
-			color: #566873;
+			color: $accent-text;
 			font-weight: normal;
 			margin: 0 0 25px 0;
 		}
@@ -155,7 +154,7 @@
 
 		.icon-angle-down {
 			line-height: 60px;
-			color: #395442;
+			color: $accent-header;
 			background-color: transparent;
 			font-size: 28px;
 			cursor: pointer;
@@ -201,17 +200,17 @@
 			min-height: 280px;
 			min-width: 355px;
 			position: relative;
-			border-top: 2px solid #8EBD4C;
+			border-top: 2px solid $accent-green;
 			text-align: justify;
 			h1 {
-				color: #8EBE4C;
+				color: $accent-green;
 				font-weight: normal;
 				font-size: 60px;
 				margin: 0 0 0 -2px;
 				padding: 0;
 			}
 			p {
-				color: #566873;
+				color: $accent-text;
 				font-size: 16px;
 				line-height: 26px;
 			}
@@ -222,8 +221,8 @@
 				font-size: 14px;
 				letter-spacing: 2px;
 				text-transform: uppercase;
-				background-color: #8EBD4C;
-				color: #FFF;
+				background-color: $accent-green;
+				color: $white;
 				position: absolute;
 				bottom: 0;
 				width: 100%;
@@ -241,9 +240,9 @@
 			flex-wrap: wrap;
 			justify-content: center;
 			align-items: center;
-			background-color: #FFF;
-			border-left: 2px solid #8EBD4C;
-			border-right: 2px solid #8EBD4C;
+			background-color: $white;
+			border-left: 2px solid $accent-green;
+			border-right: 2px solid $accent-green;
 			padding: 0 15px;
 			position: absolute;
 			top: 0; right: 0; bottom: 0; left: 0;
@@ -265,9 +264,9 @@
 				align-items: flex-start;
 
 				.tag {
-					background: #47A3DA;
+					background: $accent-blue;
 					display: inline-block;
-					color: #FFF;
+					color: $white;
 					position: relative;
 					padding: 10px;
 					margin: 10px;
@@ -275,7 +274,7 @@
 				}
 
 				.tag:before {
-					background: #FFF;
+					background: $white;
 					width: 9px;
 					height: 9px;
 					content: "";
@@ -322,10 +321,10 @@
 			}
 			&:hover, &:focus {
 				input {
-					background-color: #FFF;
-					color: #808080;
+					background-color: $white;
+					color: $accent-btn-text;
 					height: 60px;
-					border: 2px solid #8EBD4C;
+					border: 2px solid $accent-green;
 				}
 			}
 		}
@@ -336,10 +335,10 @@
 			}
 			&:hover, &:focus {
 				input {
-					background-color: #FFF;
-					color: #808080;
+					background-color: $white;
+					color: $accent-btn-text;
 					height: 60px;
-					border: 2px solid #8EBD4C;
+					border: 2px solid $accent-green;
 				}
 			}
 		}
@@ -350,10 +349,10 @@
 			}
 			&:hover, &:focus {
 				input {
-					background-color: #FFF;
-					color: #808080;
+					background-color: $white;
+					color: $accent-btn-text;
 					height: 60px;
-					border: 2px solid #8EBD4C;
+					border: 2px solid $accent-green;
 				}
 			}
 		}
@@ -362,10 +361,10 @@
 			margin-right: 30px;
 			&:hover, &:focus {
 				input {
-					background-color: #FFF;
-					color: #808080;
+					background-color: $white;
+					color: $accent-btn-text;
 					height: 60px;
-					border: 2px solid #8EBD4C;
+					border: 2px solid $accent-green;
 				}
 			}
 		}
@@ -373,10 +372,10 @@
 		.coffee-shop {
 			&:hover, &:focus {
 				input {
-					background-color: #FFF;
-					color: #808080;
+					background-color: $white;
+					color: $accent-btn-text;
 					height: 60px;
-					border: 2px solid #8EBD4C;
+					border: 2px solid $accent-green;
 				}
 			}
 		}
@@ -400,17 +399,17 @@
 			margin-top: 0;
 			border: 2px solid transparent;
 			padding: 10px;
-			color: #FFF;
-			background-color: rgba(142, 189, 76, 0.8);
+			color: $white;
+			background-color: $accent-green-rgba;
 			font-size: 20px;
 			line-height: 30px;
 			letter-spacing: 0.5px;
 			transition: all 0.2s ease-in-out;
 			&:hover, &:focus {
-				border: 2px solid #8EBD4C;
+				border: 2px solid $accent-green;
 				cursor: default;
-				color: #566873;
-				background-color: #FFF;
+				color: $accent-text;
+				background-color: $white;
 			}
 		}
 	}
@@ -432,12 +431,12 @@
 				cursor: default;
 
 				.skill-bar-percent {
-					color: #566873;
+					color: $accent-text;
 					font-size: 14px;
 				}
 
 				.skillbar-title {
-					background-color: #8EBD4C;
+					background-color: $accent-green;
 				}
 			}
 		}
@@ -447,7 +446,7 @@
 			top: 0;
 			left: 0;
 			font-size: 14px;
-			color: #FFF;
+			color: $white;
 			transition: all 0.3s ease-out;
 			span {
 				min-width: 80px;
@@ -463,7 +462,7 @@
 		.skillbar-bar {
 			height: 35px;
 			width: 0px;
-			background-color: rgba(71, 163, 218, 0.7);
+			background-color: $accent-blue-rgba;
 		}
 
 		.skill-bar-percent {
@@ -490,18 +489,20 @@
 			margin: 15px;
 		}
 		p {
-			color: #566873;
+			color: $accent-text;
 			font-size: 16px;
+			margin-bottom: 25px;
 		}
 		i {
 			text-align: center;
 			color: #2B6284;
 			font-size: 80px;
 			span {
-				color: rgba(71, 163, 218, 0.7);
+				color: $accent-blue-rgba;
 				display: inline-block;
 				width: 95px;
 				font-size: 60px;
+				vertical-align: bottom;
 			}
 		}
 
@@ -522,12 +523,12 @@
 			margin: 15px;
 		}
 		p {
-			color: #566873;
+			color: $accent-text;
 			font-size: 16px;
 			margin: 10px 0;
 		}
 		i {
-			font-size: 48px;
+			font-size: 50px;
 		}
 
 		.icon-gulp {
@@ -574,7 +575,7 @@
 						overflow: hidden;
 						margin: 30px;
 						span {
-							color: #566873;
+							color: $accent-text;
 							&.text-software {
 								top: 50%;
 								left: 50%;
@@ -588,7 +589,7 @@
 								display: block;
 								width: 100%;
 								height: 100%;
-								background-color: #8EBD4C;
+								background-color: $accent-green;
 								clip: rect(0, 75px, 150px, 0);
 							}
 							&.bar-circle-left {
@@ -597,7 +598,7 @@
 								display: block;
 								width: 100%;
 								height: 100%;
-								background: #8EBD4C;
+								background: $accent-green;
 								clip: rect(0, 75px, 150px, 0);
 								background-color: #DDD;
 							}
@@ -639,7 +640,7 @@
 		align-items: center;
 		margin-bottom: 100px;
 
-		.container-mail, .container-phone, .container-skype, .container-google-plus {
+		.container-mail, .container-phone, .container-skype, .container-github {
 			display: flex;
 			flex-direction: column;
 			align-items: center;
@@ -647,12 +648,12 @@
 			margin-right: 30px;
 		}
 
-		.container-google-plus {
+		.container-github {
 			margin-right: 0;
 		}
 
 		.icon-button {
-			background-color: #FFF;
+			background-color: $white;
 			border-radius: 50%;
 			cursor: pointer;
 			display: inline-block;
@@ -677,7 +678,7 @@
 			}
 			i {
 				background: none;
-				color: #FFF;
+				color: $white;
 				height: 116px;
 				left: 0;
 				line-height: 116px;
@@ -700,8 +701,8 @@
 				color: #00AFF0;
 			}
 
-			.icon-google-plus {
-				color: #E05A3C;
+			.icon-github {
+				color: #1E4A68;
 			}
 			&:hover, &:focus {
 				span {
@@ -712,19 +713,19 @@
 				}
 
 				.icon-mail {
-					color: #FFF;
+					color: $white;
 				}
 
 				.icon-phone {
-					color: #FFF;
+					color: $white;
 				}
 
 				.icon-skype {
-					color: #FFF;
+					color: $white;
 				}
 
-				.icon-google-plus {
-					color: #FFF;
+				.icon-github {
+					color: $white;
 				}
 			}
 		}
@@ -739,12 +740,12 @@
 		.text {
 			text-align: center;
 			font-size: 16px;
-			color: #566873;
+			color: $accent-text;
 		}
 		button {
 			width: 200px;
 			margin-top: 30px;
-			color: #FFF;
+			color: $white;
 			text-transform: uppercase;
 			font-size: 14px;
 			cursor: pointer;
@@ -753,14 +754,14 @@
 			padding: 10px 20px;
 			outline: none;
 			transition: all 0.2s ease;
-			background-color: #47A3DA;
+			background-color: $accent-blue;
 			border: 2px solid transparent;
 			&:hover, &:focus {
-				box-shadow: inset 0 0 0 2px #FFF;
+				box-shadow: inset 0 0 0 2px $white;
 			}
 			&:active {
 				transform: translateY(2px);
-				box-shadow: inset 0 0 0 2px #FFF;
+				box-shadow: inset 0 0 0 2px $white;
 			}
 		}
 	}
@@ -783,9 +784,9 @@
 			}
 		}
 
-		.google-plus {
+		.github {
 			span {
-				background-color: #E05A3C;
+				background-color: #1E4A68;
 			}
 		}
 	}

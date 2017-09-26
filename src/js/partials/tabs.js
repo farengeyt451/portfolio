@@ -81,7 +81,7 @@ function moveTabsTop() {
 	$(".tabs-content").css("display", "block");
 	$("body").css("overflow-y", "scroll");
 	$("body").css("overflow-x", "hidden");
-	$(".tabs").css("top", "5vh");
+	$(".tabs").css("top", "5%");
 	$(".tabs").css("margin-top", "0");
 	$(".tabs nav ul li").css("border-bottom", "none");
 }

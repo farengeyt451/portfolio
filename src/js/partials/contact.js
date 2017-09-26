@@ -12,7 +12,7 @@ function copyToClipboard(element) {
 				} else if (element === "#skype") {
 					styleBtnScl("#skypebtn");
 				} else {
-					styleBtnScl("#gplusbtn");
+					styleBtnScl("#githbtn");
 				}
 			}
 		} catch (err) {
@@ -25,6 +25,14 @@ function copyToClipboard(element) {
 function styleBtnScl(btn) {
 	$(btn).css("background-color", "#8EBD4C");
 	$(btn).text("Done");
+	setTimeout(function() {
+			styleBtnBack(btn);
+	}, 2000);
+}
+
+function styleBtnBack(btn) {
+	$(btn).css("background-color", "#47A3DA");
+	$(btn).text("Copy");
 }
 
 function styleBtnEr(btn) {

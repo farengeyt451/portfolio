@@ -13,16 +13,8 @@
 		}
 	}
 
-	.header-content {
-		max-width: 1230px;
-		position: absolute;
-		top: 0;
-		left: 50%;
-		transform: translate(-50%, 0);
-	}
-
 	.name-info {
-		color: #768E9D;
+		color: $accent-header;
 		opacity: 1;
 		transition: 0.5s;
 		background-color: rgba(255, 255, 255, 0.6);
@@ -32,7 +24,7 @@
 		cursor: default;
 		display: inline-block;
 		padding: 15px 30px;
-		border: 2px solid #47A3DA;
+		border: 2px solid $accent-blue;
 		span {
 			display: inline-block;
 			padding: 0 2px 10px 2px;
@@ -45,7 +37,7 @@
 			visibility: hidden;
 			font-size: 20px;
 			overflow: hidden;
-			border-right: 2px solid #768E9D;
+			border-right: 2px solid $accent-header;
 			white-space: nowrap;
 			margin: 0 auto;
 			letter-spacing: 2px;
@@ -68,7 +60,7 @@
 		border-color: transparent
 	}
 	50% {
-		border-color: #768E9D
+		border-color: $accent-header;
 	}
 }
 

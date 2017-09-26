@@ -10,7 +10,7 @@ $(".container-techniques").one("mouseover touchstart", function () {
 	animateTechniques();
 });
 
-$(".animate").one("mouseover touchstart", function () {
+$(".container-tools").one("mouseover touchstart", function () {
 	animateSoftware();
 });
 
