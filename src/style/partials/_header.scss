@@ -2,9 +2,9 @@
 //-Header
 //-------
 
+
 .header {
 	height: 100vh;
-
 	.particle-network-animation {
 		height: 100%;
 		transition: 0.5s;
@@ -12,12 +12,11 @@
 			width: 100%;
 		}
 	}
-
 	.name-info {
 		color: $accent-header;
 		opacity: 1;
 		transition: 0.5s;
-		background-color: rgba(255, 255, 255, 0.6);
+		background-color: rgba($white, 0.6);
 		position: absolute;
 		top: 20%;
 		left: 10%;

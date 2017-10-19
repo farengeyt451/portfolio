@@ -2,9 +2,11 @@
 //-Main content
 //-------------
 
+
 //----------------
 //-Tabs-navigation
 //----------------
+
 
 .tabs {
 	background: linear-gradient(to bottom, rgba($white, 0.6) 0%,rgba($white, 1.0) 30%);
@@ -14,7 +16,6 @@
 	transition: all 0.5s ease;
 	margin-top: 0;
 	overflow-x: hidden;
-
 	nav {
 		text-align: center;
 		ul {
@@ -32,7 +33,6 @@
 				transition: 0.5s;
 			}
 		}
-
 		.tab-current {
 			border: 2px solid $accent-blue;
 			box-shadow: inset 0 2px $accent-blue;
@@ -71,9 +71,6 @@
 			padding: 0 20px;
 			white-space: nowrap;
 			transition: 0.2s;
-			span {
-				font-family: "Montserrat", sans-serif;
-			}
 			&:before {
 				display: inline-block;
 				text-transform: none;
@@ -93,20 +90,16 @@
 				transform: translateY(5px);
 			}
 		}
-
 		.icon-projects:before {
 			content: "\f121";
 		}
-
 		.icon-about:before {
 			content: "\e914";
 		}
-
 		.icon-contacts:before {
 			content: "\f0ac";
 		}
 	}
-
 	.tabs-content {
 		display: none;
 		padding: 60px 15px 0 15px;
@@ -116,7 +109,6 @@
 			font-weight: normal;
 			margin: 0 0 25px 0;
 		}
-
 		.content {
 			max-width: 1230px;
 			margin: 0 auto;
@@ -134,11 +126,9 @@
 					clear: both;
 				}
 			}
-
 			.content-current {
 				display: block;
 			}
-
 			.for-mobile {
 				h1 {
 					text-align: center;
@@ -148,14 +138,12 @@
 			}
 		}
 	}
-
 	.icon-down {
 		width: 100px;
 		height: 60px;
 		margin: 0 auto;
 		text-align: center;
 		transform: translateY(-60px);
-
 		.icon-angle-down {
 			line-height: 60px;
 			color: $accent-header;
@@ -167,7 +155,6 @@
 			animation: bounce 2s infinite;
 		}
 	}
-
 	@keyframes bounce {
 		0%, 20%, 50%, 80%, 100% {
 			transform: translateY(0);
@@ -186,16 +173,14 @@
 //-#Section-1 | Projects
 //----------------------
 
-#section-1 {
 
+#section-1 {
 	.container {
 		margin: 0 auto;
-
 		.row {
 			display: flex;
 			flex-wrap: wrap;
 		}
-
 		.col {
 			margin-bottom: 30px;
 			overflow: hidden;
@@ -238,7 +223,6 @@
 				}
 			}
 		}
-
 		.slide {
 			display: flex;
 			flex-wrap: wrap;
@@ -259,14 +243,12 @@
 				align-self: flex-start;
 				margin: 10px 0;
 			}
-
 			.text-tags {
 				padding-bottom: 60px;
 				display: flex;
 				flex-wrap: wrap;
 				justify-content: center;
 				align-items: flex-start;
-
 				.tag {
 					background: $accent-blue;
 					display: inline-block;
@@ -276,7 +258,6 @@
 					margin: 10px;
 					font-size: 14px;
 				}
-
 				.tag:before {
 					background: $white;
 					width: 9px;
@@ -288,19 +269,16 @@
 				}
 			}
 		}
-
 		.row:hover {
 			& ~ .row .slide {
 				transform: translateY(-100%);
 			}
-
 			.col:hover .slide {
 				transform: none;
 				visibility: visible;
 				transition-delay: 0s;
 			}
 		}
-
 		.photo-container {
 			display: flex;
 			flex-wrap: wrap;
@@ -317,7 +295,6 @@
 				top: 0; right: 0; bottom: 0; left: 0;
 			}
 		}
-
 		.blink {
 			margin-right: 30px;
 			h1 {
@@ -332,7 +309,6 @@
 				}
 			}
 		}
-
 		.denteez {
 			h1 {
 				margin-left: -6px;
@@ -346,7 +322,6 @@
 				}
 			}
 		}
-
 		.business, .local-weather {
 			h1 {
 				margin-left: -6px;
@@ -360,7 +335,6 @@
 				}
 			}
 		}
-
 		.style {
 			margin-right: 30px;
 			&:hover, &:focus {
@@ -372,7 +346,6 @@
 				}
 			}
 		}
-
 		.coffee-shop {
 			&:hover, &:focus {
 				input {
@@ -383,19 +356,19 @@
 				}
 			}
 		}
-
 		.mg-bottom {
 			margin-bottom: 100px;
 		}
 	}
 }
 
+
 //----------------------
 //-#Section-2 | About Me
 //----------------------
 
-#section-2 {
 
+#section-2 {
 	.container-about-me {
 		margin-bottom: 60px;
 		transition: all 0.2s ease-in-out;
@@ -417,12 +390,10 @@
 			}
 		}
 	}
-
 	.container-skills {
 		margin-bottom: 60px;
 		h1 {
 		}
-
 		.skillbar {
 			position: relative;
 			display: block;
@@ -433,18 +404,15 @@
 			transition: all 0.4s ease-out;
 			&:hover, &:focus {
 				cursor: default;
-
 				.skill-bar-percent {
 					color: $accent-text;
 					font-size: 14px;
 				}
-
 				.skillbar-title {
 					background-color: $accent-green;
 				}
 			}
 		}
-
 		.skillbar-title {
 			position: absolute;
 			top: 0;
@@ -462,13 +430,11 @@
 				line-height: 35px;
 			}
 		}
-
 		.skillbar-bar {
 			height: 35px;
 			width: 0px;
 			background-color: rgba($accent-blue, 0.8);
 		}
-
 		.skill-bar-percent {
 			position: absolute;
 			right: 10px;
@@ -481,14 +447,12 @@
 			transition: all 0.3s ease-out;
 		}
 	}
-
 	.container-techniques {
 		display: flex;
 		flex-direction: row;
 		flex-wrap: wrap;
 		justify-content: space-around;
 		text-align: center;
-
 		.col {
 			margin: 15px;
 		}
@@ -509,12 +473,10 @@
 				vertical-align: bottom;
 			}
 		}
-
 		.icon-pixel-perfect {
 			font-size: 90px;
 		}
 	}
-
 	.container-tools {
 		display: flex;
 		flex-direction: row;
@@ -522,7 +484,6 @@
 		justify-content: space-around;
 		text-align: center;
 		margin-bottom: 60px;
-
 		.col {
 			margin: 15px;
 		}
@@ -534,31 +495,25 @@
 		i {
 			font-size: 50px;
 		}
-
 		.icon-gulp {
 			color: $icon-gulp;
 		}
-
 		.icon-nodejs {
 			color: $icon-nodejs;
 		}
-
 		.icon-npm {
 			color: $icon-npm;
 		}
 		.icon-yarn {
 			color: $icon-yarn;
 		}
-
 		.icon-git {
 			color: $icon-git;
 		}
-
 		.icon-github {
 			color: $icon-github;
 		}
 	}
-
 	.container-software {
 		.skill-box {
 			.skills-circle {
@@ -624,9 +579,11 @@
 	}
 }
 
+
 //---------------------
 //-#Section-3 | Contact
 //---------------------
+
 
 #section-3 {
 	min-height: calc(95vh - 190px);
@@ -641,7 +598,6 @@
 		justify-content: space-around;
 		align-items: center;
 		margin-bottom: 100px;
-
 		.container-mail, .container-phone, .container-skype, .container-github {
 			display: flex;
 			flex-direction: column;
@@ -649,11 +605,9 @@
 			margin-bottom: 15px;
 			margin-right: 30px;
 		}
-
 		.container-github {
 			margin-right: 0;
 		}
-
 		.icon-button {
 			background-color: $white;
 			border-radius: 50%;
@@ -690,19 +644,15 @@
 				width: 116px;
 				z-index: 10;
 			}
-
 			.icon-mail {
 				color: $icon-mail;
 			}
-
 			.icon-phone {
 				color: $icon-phone;
 			}
-
 			.icon-skype {
 				color: $icon-skype;
 			}
-
 			.icon-github {
 				color: $icon-github;
 			}
@@ -713,32 +663,26 @@
 					border-radius: 116px;
 					margin: -58px;
 				}
-
 				.icon-mail {
 					color: $white;
 				}
-
 				.icon-phone {
 					color: $white;
 				}
-
 				.icon-skype {
 					color: $white;
 				}
-
 				.icon-github {
 					color: $white;
 				}
 			}
 		}
-
 	.container-copy {
 		flex-direction: column;
 		margin-top: 15px;
 		display: flex;
 		justify-content: space-between;
 		align-items: center;
-
 		.text {
 			text-align: center;
 			font-size: 16px;
@@ -767,25 +711,21 @@
 			}
 		}
 	}
-
 		.mail {
 			span {
 				background-color: $icon-mail;
 			}
 		}
-
 		.phone {
 			span {
 				background-color: $icon-phone;
 			}
 		}
-
 		.skype {
 			span {
 				background-color: $icon-skype;
 			}
 		}
-
 		.github {
 			span {
 				background-color: $icon-github;
