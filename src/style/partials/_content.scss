@@ -7,13 +7,14 @@
 //----------------
 
 .tabs {
-	background: linear-gradient(to bottom, rgba(255, 255, 255, 0.6) 0%,rgba(255, 255, 255, 1.0) 30%);
+	background: linear-gradient(to bottom, rgba($white, 0.6) 0%,rgba($white, 1.0) 30%);
 	position: absolute;
 	top: 100%;
 	width: 100vw;
 	transition: all 0.5s ease;
 	margin-top: 0;
 	overflow-x: hidden;
+
 	nav {
 		text-align: center;
 		ul {
@@ -22,11 +23,11 @@
 			padding: 0;
 			margin: 0;
 			li {
-				background-color: rgba(255, 255, 255, 0.6);
+				background-color: rgba($white, 0.6);
 				display: block;
 				position: relative;
 				float: left;
-				border: 2px solid #BECBD2;
+				border: 2px solid $accent-border;
 				margin: 0 4px;
 				transition: 0.5s;
 			}
@@ -64,12 +65,15 @@
 		a {
 			display: block;
 			text-decoration: none;
-			color: #A7B2B8;
+			color: $link-color;
 			font-size: 24px;
 			line-height: 60px;
 			padding: 0 20px;
 			white-space: nowrap;
 			transition: 0.2s;
+			span {
+				font-family: "Montserrat", sans-serif;
+			}
 			&:before {
 				display: inline-block;
 				text-transform: none;
@@ -400,7 +404,7 @@
 			border: 2px solid transparent;
 			padding: 10px;
 			color: $white;
-			background-color: $accent-green-rgba;
+			background-color: rgba($accent-green, 0.8);
 			font-size: 20px;
 			line-height: 30px;
 			letter-spacing: 0.5px;
@@ -424,7 +428,7 @@
 			display: block;
 			margin-bottom: 15px;
 			width: 100%;
-			background: #EEE;
+			background: $accent-grey;
 			height: 35px;
 			transition: all 0.4s ease-out;
 			&:hover, &:focus {
@@ -452,7 +456,7 @@
 				min-width: 80px;
 				text-align: center;
 				display: block;
-				background-color: rgba(0, 0, 0, 0.1);
+				background-color: rgba($black, 0.1);
 				padding: 0 20px;
 				height: 35px;
 				line-height: 35px;
@@ -462,7 +466,7 @@
 		.skillbar-bar {
 			height: 35px;
 			width: 0px;
-			background-color: $accent-blue-rgba;
+			background-color: rgba($accent-blue, 0.8);
 		}
 
 		.skill-bar-percent {
@@ -473,7 +477,7 @@
 			height: 35px;
 			line-height: 35px;
 			color: #444;
-			color: rgba(0, 0, 0, 0.4);
+			color: rgba($black, 0.4);
 			transition: all 0.3s ease-out;
 		}
 	}
@@ -495,10 +499,10 @@
 		}
 		i {
 			text-align: center;
-			color: #2B6284;
+			color: $icon-techniques;
 			font-size: 80px;
 			span {
-				color: $accent-blue-rgba;
+				color: rgba($accent-blue, 0.8);
 				display: inline-block;
 				width: 95px;
 				font-size: 60px;
@@ -532,33 +536,31 @@
 		}
 
 		.icon-gulp {
-			color: #D34A47;
+			color: $icon-gulp;
 		}
 
 		.icon-nodejs {
-			color: #90C53F;
+			color: $icon-nodejs;
 		}
 
 		.icon-npm {
-			color: #CB3736;
+			color: $icon-npm;
 		}
 		.icon-yarn {
-			color: #2C8EBB;
+			color: $icon-yarn;
 		}
 
 		.icon-git {
-			color: #F34F29;
+			color: $icon-git;
 		}
 
 		.icon-github {
-			color: #0D2636;
+			color: $icon-github;
 		}
 	}
 
 	.container-software {
-
 		.skill-box {
-
 			.skills-circle {
 				ul {
 					padding: 0;
@@ -568,7 +570,7 @@
 					li {
 						width: 150px;
 						height: 150px;
-						background-color: #DDD;
+						background-color: $secondary-grey;
 						border-radius: 50%;
 						position: relative;
 						display: inline-block;
@@ -600,14 +602,14 @@
 								height: 100%;
 								background: $accent-green;
 								clip: rect(0, 75px, 150px, 0);
-								background-color: #DDD;
+								background-color: $secondary-grey;
 							}
 							&.bar-circle-cover {
 								display: block;
 								width: 90%;
 								height: 90%;
 								border-radius: 50%;
-								background-color: #EEE;
+								background-color: $accent-grey;
 								z-index: 0;
 								position: absolute;
 								top: 50%;
@@ -690,19 +692,19 @@
 			}
 
 			.icon-mail {
-				color: #7E7CFF;
+				color: $icon-mail;
 			}
 
 			.icon-phone {
-				color: #2B979C;
+				color: $icon-phone;
 			}
 
 			.icon-skype {
-				color: #00AFF0;
+				color: $icon-skype;
 			}
 
 			.icon-github {
-				color: #1E4A68;
+				color: $icon-github;
 			}
 			&:hover, &:focus {
 				span {
@@ -768,25 +770,25 @@
 
 		.mail {
 			span {
-				background-color: #7E7CFF;
+				background-color: $icon-mail;
 			}
 		}
 
 		.phone {
 			span {
-				background-color: #2B979C;
+				background-color: $icon-phone;
 			}
 		}
 
 		.skype {
 			span {
-				background-color: #00AFF0;
+				background-color: $icon-skype;
 			}
 		}
 
 		.github {
 			span {
-				background-color: #1E4A68;
+				background-color: $icon-github;
 			}
 		}
 	}
