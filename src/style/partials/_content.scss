@@ -33,6 +33,9 @@
 				transition: 0.5s;
 			}
 		}
+		span {
+			font-family: "Montserrat", sans-serif;
+		}
 		.tab-current {
 			border: 2px solid $accent-blue;
 			box-shadow: inset 0 2px $accent-blue;
@@ -290,42 +293,45 @@
 			transition: 1s;
 			transform-origin: bottom right;
 			&::before {
-				content: '';
+				content: "";
 				position: absolute;
 				top: 0; right: 0; bottom: 0; left: 0;
 			}
 		}
-		.blink {
-			margin-right: 30px;
+		// .blink, .calculator {
+		// 	margin-right: 30px;
+		// 	h1 {
+		// 		// margin-left: -6px;
+		// 	}
+		// 	&:hover, &:focus {
+		// 		input {
+		// 			background-color: $white;
+		// 			color: $accent-btn-text;
+		// 			height: 60px;
+		// 			border: 2px solid $accent-green;
+		// 		}
+		// 	}
+		// }
+		// .denteez, .tomato-timer {
+		// 	h1 {
+		// 		// margin-left: -6px;
+		// 	}
+		// 	&:hover, &:focus {
+		// 		input {
+		// 			background-color: $white;
+		// 			color: $accent-btn-text;
+		// 			height: 60px;
+		// 			border: 2px solid $accent-green;
+		// 		}
+		// 	}
+		// }
+		.business, .local-weather, .blink, .denteez {
 			h1 {
 				margin-left: -6px;
 			}
-			&:hover, &:focus {
-				input {
-					background-color: $white;
-					color: $accent-btn-text;
-					height: 60px;
-					border: 2px solid $accent-green;
-				}
-			}
 		}
-		.denteez {
-			h1 {
-				margin-left: -6px;
-			}
-			&:hover, &:focus {
-				input {
-					background-color: $white;
-					color: $accent-btn-text;
-					height: 60px;
-					border: 2px solid $accent-green;
-				}
-			}
-		}
+
 		.business, .local-weather {
-			h1 {
-				margin-left: -6px;
-			}
 			&:hover, &:focus {
 				input {
 					background-color: $white;
@@ -335,7 +341,7 @@
 				}
 			}
 		}
-		.style {
+		.style, .blink, .calculator {
 			margin-right: 30px;
 			&:hover, &:focus {
 				input {
@@ -346,7 +352,7 @@
 				}
 			}
 		}
-		.coffee-shop {
+		.coffee-shop, .denteez, .tomato-timer {
 			&:hover, &:focus {
 				input {
 					background-color: $white;
@@ -466,6 +472,7 @@
 			color: $icon-techniques;
 			font-size: 80px;
 			span {
+				font-family: "Montserrat", sans-serif;
 				color: rgba($accent-blue, 0.8);
 				display: inline-block;
 				width: 95px;

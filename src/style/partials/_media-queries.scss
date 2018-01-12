@@ -321,23 +321,12 @@
 			.col {
 				min-width: 240px;
 			}
-			.blink {
-				margin-right: 0;
+			.business, .local-weather, .blink, .denteez {
 				h1 {
 					margin-left: -2px;
 				}
 			}
-			.denteez {
-				h1 {
-					margin-left: -2px;
-				}
-			}
-			.business, .local-weather {
-				h1 {
-					margin-left: -2px;
-				}
-			}
-			.style {
+			.blink, .style, .calculator {
 				margin-right: 0;
 			}
 		}
