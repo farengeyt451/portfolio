@@ -1,32 +1,36 @@
 @font-face {
 	font-family: "Montserrat";
-	src: url("../fonts/Montserrat-Bold.eot");
-	src: url("../fonts/Montserrat-Bold.eot?#iefix") format("embedded-opentype"), url("../fonts/Montserrat-Bold.woff") format("woff"), url("../fonts/Montserrat-Bold.ttf") format("truetype");
+	src: url("../fonts/montserrat/montserrat-bold.eot");
+	src: url("../fonts/montserrat/montserrat-bold.eot?#iefix") format("embedded-opentype"),
+		url("../montserrat/fonts/montserrat-bold.woff") format("woff"),
+		url("../fonts/montserrat/montserrat-bold.ttf") format("truetype");
 	font-weight: bold;
 	font-style: normal;
 }
 
 @font-face {
 	font-family: "Montserrat";
-	src: url("../fonts/Montserrat-Regular.eot");
-	src: url("../fonts/Montserrat-Regular.eot?#iefix") format("embedded-opentype"), url("../fonts/Montserrat-Regular.woff") format("woff"), url("../fonts/Montserrat-Regular.ttf") format("truetype");
+	src: url("../fonts/montserrat/montserrat-regular.eot");
+	src: url("../fonts/montserrat/montserrat-regular.eot?#iefix") format("embedded-opentype"),
+		url("../fonts/montserrat/montserrat-regular.woff") format("woff"),
+		url("../fonts/montserrat/montserrat-regular.ttf") format("truetype");
 	font-weight: normal;
 	font-style: normal;
 }
 
 @font-face {
-	font-family: "icomoon";
-	src:  url("../fonts/icomoon.eot?fcec72");
-	src:  url("../fonts/icomoon.eot?fcec72#iefix") format("embedded-opentype"),
-		url("../fonts/icomoon.ttf?fcec72") format("truetype"),
-		url("../fonts/icomoon.woff?fcec72") format("woff"),
-		url("../fonts/icomoon.svg?fcec72#icomoon") format("svg");
+	font-family: "Icomoon";
+	src:  url("../fonts/icomoon/icomoon.eot?fcec72");
+	src:  url("../fonts/icomoon/icomoon.eot?fcec72#iefix") format("embedded-opentype"),
+		url("../fonts/icomoon/icomoon.ttf?fcec72") format("truetype"),
+		url("../fonts/icomoon/icomoon.woff?fcec72") format("woff"),
+		url("../fonts/icomoon/icomoon.svg?fcec72#icomoon") format("svg");
 	font-weight: normal;
 	font-style: normal;
 }
 
 [class^="icon-"], [class*=" icon-"] {
-	font-family: "icomoon" !important;
+	font-family: "Icomoon" !important;
 	speak: none;
 	font-style: normal;
 	font-weight: normal;
@@ -36,10 +40,6 @@
 	-webkit-font-smoothing: antialiased;
 	-moz-osx-font-smoothing: grayscale;
 }
-
-// * {
-// 	font-family: "Montserrat", sans-serif;
-// }
 
 .icon-phone:before {
 	content: "\e919";
