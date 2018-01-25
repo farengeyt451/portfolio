@@ -432,6 +432,7 @@
 		flex-direction: row;
 		flex-wrap: wrap;
 		justify-content: space-around;
+		align-items: center;
 		text-align: center;
 		.col {
 			margin: 15px;
@@ -453,9 +454,6 @@
 				font-size: 60px;
 				vertical-align: bottom;
 			}
-		}
-		.icon-pixel-perfect {
-			font-size: 90px;
 		}
 	}
 	.container-tools {
