@@ -67,6 +67,12 @@
 				}
 			}
 		}
+
+		.container-cross-browser {
+			h2 {
+				font-size: 20px;
+			}
+		}
 	}
 
 	#section-3 {
@@ -109,7 +115,7 @@
 				box-shadow: none;
 				border: none;
 
-				&:before {
+				&::before {
 					content: "";
 					position: absolute;
 					height: 2px;
@@ -119,7 +125,7 @@
 					background-color: $accent-blue;
 				}
 
-				&:after {
+				&::after {
 					content: "";
 					position: absolute;
 					height: 2px;
@@ -141,9 +147,6 @@
 					width: 33%;
 					margin: 0 0 0 -1px;
 					border: none;
-
-					&:first-child {
-					}
 
 					&:last-child {
 						width: calc(34% + 3px);
@@ -193,8 +196,6 @@
 
 	#section-2 {
 		.container-skills {
-			margin-bottom: 30px;
-
 			.skillbar {
 				height: 25px;
 				margin-bottom: 10px;
@@ -263,6 +264,29 @@
 
 
 // ----------------
+// Max-width:725px
+// ----------------
+
+
+@media screen and (max-width: 725px) {
+	#section-2 {
+		.container-cross-browser {
+			margin: 40px 0;
+			h2 {
+				margin-bottom: 40px;
+			}
+
+			.browsers {
+				flex-shrink: 1;
+				justify-content: space-around;
+				flex-wrap: wrap;
+			}
+		}
+	}
+}
+
+
+// ----------------
 // Max-width: 580px
 // ----------------
 
@@ -280,7 +304,7 @@
 				span {
 					display: none;
 				}
-				&:before {
+				&::before {
 					margin-right: 0;
 				}
 			}
@@ -395,6 +419,12 @@
 						}
 					}
 				}
+			}
+		}
+
+		.container-cross-browser {
+			h2 {
+				font-size: 20px;
 			}
 		}
 	}

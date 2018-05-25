@@ -301,7 +301,7 @@
 					font-size: 14px;
 				}
 
-				.tag:before {
+				.tag::before {
 					background: $white;
 					width: 9px;
 					height: 9px;
@@ -535,6 +535,54 @@
 				font-size: 60px;
 				vertical-align: bottom;
 			}
+		}
+	}
+
+	.container-cross-browser {
+		display: flex;
+		flex-wrap: wrap;
+		justify-content: space-between;
+		align-items: center;
+		margin: 60px 0;
+
+		.browsers {
+			flex-grow: 1;
+			flex-shrink: 0;
+			display: flex;
+			justify-content: space-between;
+			flex-wrap: wrap;
+		}
+
+		h2 {
+			font-weight: normal;
+			font-size: 22px;
+			color: $accent-text;
+			margin-right: 40px;
+		}
+
+		i {
+			font-size: 50px;
+			margin: 20px;
+		}
+
+		.icon-chrome {
+			color: $icon-google-chrome;
+		}
+
+		.icon-firefox {
+			color: $icon-firefox;
+		}
+
+		.icon-opera {
+			color: $icon-opera;
+		}
+
+		.icon-internet-explorer {
+			color: $icon-explorer;
+		}
+
+		.icon-edge {
+			color: $icon-edge;
 		}
 	}
 
