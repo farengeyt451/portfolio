@@ -2,4 +2,3 @@
 //= partials/particle.js
 //= partials/content.js
 //= partials/contact.js
-//= partials/ya.js
